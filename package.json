@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "styles": "postcss -u autoprefixer -u postcss-cssnext -c options.json -o dist/bundle.css src/styles/*.css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "postcss-cli": "^2.5.1",
+    "postcss-cssnext": "^2.4.0"
+  },
+  "dependencies": {}
+}

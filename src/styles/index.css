@@ -1,0 +1,15 @@
+/**
+ * Coolio.
+ **/
+
+:root {
+  --BackgroundColor: fuchsia;
+}
+
+body {
+  background: var(--BackgroundColor);
+}
+
+a {
+  display: flex;
+}
