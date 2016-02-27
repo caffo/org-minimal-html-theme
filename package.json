@@ -3,7 +3,8 @@
   "scripts": {
     "styles": "postcss -u autoprefixer -u postcss-cssnext -c options.json -o dist/bundle.css src/styles/*.css",
     "compress": "cssnano < dist/bundle.css > dist/bundle.min.css",
-    "server": "browser-sync start --files dist/bundle.css --server --no-notify --no-open"
+    "server": "browser-sync start --files dist/bundle.css --server --no-notify --no-open",
+    "watch": "npm run styles -- -w"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.3",
