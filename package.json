@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "start": "npm run watch & npm run server",
     "styles": "postcss -u autoprefixer -u postcss-cssnext -c options.json -o dist/bundle.css src/styles/*.css",
     "compress": "cssnano < dist/bundle.css > dist/bundle.min.css",
     "server": "browser-sync start --files dist/bundle.css --server --no-notify --no-open",
