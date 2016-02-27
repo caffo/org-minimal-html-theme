@@ -1,15 +1,6 @@
-/**
- * Coolio.
- **/
-
-:root {
-  --BackgroundColor: orange;
-}
+@import './variables.css';
+@import './typography.css';
 
 body {
-  background: var(--BackgroundColor);
-}
-
-a {
-  display: flex;
+  background-color: red;
 }
