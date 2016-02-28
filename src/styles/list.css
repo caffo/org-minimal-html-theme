@@ -1,0 +1,20 @@
+/*
+ ==============================================================================
+ Lists
+ ==============================================================================
+*/
+
+ol, ul {
+  margin-top: 0;
+  margin-bottom: var(--lists-margin-bottom);
+}
+
+/*
+Remove bottom margin of children lists.
+*/
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}

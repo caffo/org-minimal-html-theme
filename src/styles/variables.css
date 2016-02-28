@@ -33,4 +33,25 @@
   --headings-color: var(--color);
   --headings-margin-bottom: calc(var(--font-size) * 0.5);
 
+  /* Paragraphs */
+  --paragraphs-margin-bottom: var(--font-size);
+
+  /* Lists */
+  --lists-margin-bottom: var(--font-size);
+
+  /* Quotes */
+  --quotes-margin-bottom: var(--font-size);
+
+  /* Code */
+  --code-margin-bottom: var(--font-size);
+
+  /* Tables */
+  --table-bg: #DDD;
+
+  /* Links */
+  --link-shadow: -1px -1px 0 #FFF, -1px -1px 0 #FFF, -1px -1px 0 #FFF;
+  --link-shadow-offset-x: 2px;
+  --link-shadow-offset-y: 3px;
+  --link-color: var(--color);
+  --link-color-underline: color(var(--color) alpha(-20%));
 }
