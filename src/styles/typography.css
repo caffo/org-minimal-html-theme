@@ -6,14 +6,27 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font-family);
-  font-weight: var(--heading-font-weight);
   line-height: var(--heading-line-height);
   color: var(--heading-color);
   margin-top: var(--heading-margin-top);
   margin-bottom: var(--heading-margin-bottom);
 }
 
-h3 {
+/*
+ Headings » Master headings
+ ==============================================================================
+*/
+
+h1, h2 {
+  font-weight: var(--heading-font-weight);
+}
+
+/*
+ Headings » Secondary headings
+ ==============================================================================
+*/
+
+h3, h4, h5, h6 {
   font-weight: normal;
   color: var(--color-gray);
 }
