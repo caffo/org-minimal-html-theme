@@ -1,4 +1,13 @@
 :root {
+  /* Global */
+  --font-size: 16px;
+  --line-height: 1.5;
+
+  /* Colors */
+  --color: #3A3A3A;
+  --color-bg: #FFF;
+  --color-transparent: rgba(0, 0, 0, 0);
+
   /* Typography scale */
   --h1: 2rem;
   --h2: 1.5rem;
@@ -8,7 +17,19 @@
   --h6: 0.75rem;
 
   /* Fonts */
-  --font-family-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-family-serif: Georgia, 'Times New Roman', Times, serif;
-  --font-family-monospace: Menlo, Monaco, Consolas, 'Courier New', monospace
+  --font-family-sans-serif: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-serif: 'PT Serif', Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-family-monospace: Menlo, Monaco, 'Courier New', Courier, monospace;
+
+  /* Weight */
+  --font-weight-light: 300;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+
+  /* Headings */
+  --headings-font-family: var(--font-family-sans-serif);
+  --headings-font-weight: var(--font-weight-bold);
+  --headings-line-height: var(--line-height);
+  --headings-color: var(--color);
+  --headings-margin-bottom: 0.5rem;
 }

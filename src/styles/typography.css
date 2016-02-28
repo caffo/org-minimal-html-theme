@@ -1,3 +1,17 @@
+/* Sans serif font: Open Sans */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800);
+
+/* Serif font: PT Serif */
+@import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700);
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headings-font-family);
+  font-weight: var(--headings-font-weight);
+  line-height: var(--headings-line-height);
+  color: var(--headings-color);
+  margin-bottom: var(--headings-margin-bottom);
+}
+
 h1 { font-size: var(--h1) }
 h2 { font-size: var(--h2) }
 h3 { font-size: var(--h3) }
