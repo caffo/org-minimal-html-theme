@@ -14,5 +14,8 @@
     "postcss-cli": "^2.5.1",
     "postcss-cssnext": "^2.4.0",
     "postcss-import": "^8.0.2"
+  },
+  "dependencies": {
+    "normalize.css": "^3.0.3"
   }
 }

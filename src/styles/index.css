@@ -1,6 +1,4 @@
+@import 'normalize.css';
 @import './variables.css';
 @import './typography.css';
-
-body {
-  background-color: red;
-}
+@import './links.css';
