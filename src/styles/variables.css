@@ -1,21 +1,23 @@
 :root {
   /* Global */
-  --font-size-base: 16px;
+  --font-size-base: 18px;
   --font-size: 1.25rem;
   --line-height: 1.5;
 
   /* Colors */
   --color: #3A3A3A;
   --color-bg: #FFF;
-  --color-gray: rgba(0, 0, 0, .45);
+  --color-gray: rgba(0, 0, 0, 0.45);
+  --color-light-gray: rgba(0, 0, 0, 0.045);
+  --color-lighter-gray: rgba(0, 0, 0, 0.05);
 
   /* Typography scale */
-  --h1: 2.55rem;
+  --h1: 2.9rem;
   --h2: 2rem;
   --h3: 1.75rem;
-  --h4: 1rem;
-  --h5: 0.875rem;
-  --h6: 0.75rem;
+  --h4: 1.6rem;
+  --h5: 1.45rem;
+  --h6: 1.25rem;
 
   /* Fonts */
   --font-family-sans-serif: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -35,11 +37,23 @@
   --heading-margin-top: 2.5rem;
   --heading-margin-bottom: 1.5rem;
 
+  /* Content */
+  --content-max-width: 700px;
+  --content-padding-vertical: 0;
+  --content-padding-horizontal: 40px;
+  --content-margin-top: 2rem;
+  --content-margin-bottom: 8rem;
+
   /* Paragraphs */
   --paragraph-margin-bottom: 2.5rem;
 
   /* Lists */
-  --lists-margin-bottom: var(--font-size);
+  --list-margin-bottom: var(--font-size);
+  --list-symbol-level1: '●';
+  --list-symbol-level2: '◯';
+  --list-symbol-level3: '◼';
+  --list-symbol-level4: '◻';
+  --list-symbol-level5: '»';
 
   /* Quotes */
   --quote-margin-bottom: var(--font-size);
@@ -49,14 +63,15 @@
 
   /* Code */
   --code-margin-bottom: var(--font-size);
-
-  /* Tables */
-  --table-bg: #DDD;
+  --code-border-radius: 3px;
+  --code-padding-vertical: 0.2rem;
+  --code-padding-horizontal: 0;
+  --code-border: 1px solid var(--color-light-gray);
 
   /* Links */
   --link-shadow: -1px -1px 0 #FFF, -1px -1px 0 #FFF, -1px -1px 0 #FFF;
   --link-shadow-offset-x: 2px;
   --link-shadow-offset-y: 3px;
   --link-color: var(--color);
-  --link-color-underline: color(var(--color) alpha(-20%));
+  --link-color-underline: red;
 }

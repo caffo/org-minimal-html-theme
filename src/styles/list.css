@@ -6,7 +6,68 @@
 
 ol, ul {
   margin-top: 0;
-  margin-bottom: var(--lists-margin-bottom);
+  margin-bottom: var(--list-margin-bottom);
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+}
+
+/*
+ List » Level 1
+ ==============================================================================
+*/
+
+ul li::before {
+  content: var(--list-symbol-level1);
+  position: absolute;
+  left: -25px;
+}
+
+/*
+ List » Level 2
+ ==============================================================================
+*/
+
+ul li + ul li::before {
+  content: var(--list-symbol-level2);
+  font-size: 11px;
+  top: 10px;
+}
+
+/*
+ List » Level 3
+ ==============================================================================
+*/
+
+ul li + ul li + ul li::before {
+  content: var(--list-symbol-level3);
+  font-size: 15px;
+  top: 7px;
+}
+
+/*
+ List » Level 4
+ ==============================================================================
+*/
+
+ul li + ul li + ul li + ul li::before {
+  content: var(--list-symbol-level4);
+}
+
+/*
+ List » Level 5
+ ==============================================================================
+*/
+
+ul li + ul li + ul li + ul li + ul li::before {
+  content: var(--list-symbol-level5);
+  font-size: 1rem;
+  top: 2.5px;
 }
 
 /*
