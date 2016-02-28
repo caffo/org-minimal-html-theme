@@ -5,5 +5,17 @@
 */
 
 blockquote {
-  margin: 0 0 var(--quotes-margin-bottom);
+  font-style: italic;
+  margin: 0 0 var(--quote-margin-bottom);
+  position: relative;
+}
+
+blockquote::before {
+  content: '';
+  position: absolute;
+  left: var(--quote-divisor-left);
+  top: -7.5%;
+  width: var(--quote-divisor-size);
+  height: 115%;
+  background: var(--quote-divisor-color);
 }

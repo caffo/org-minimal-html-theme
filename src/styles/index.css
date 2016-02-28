@@ -1,4 +1,17 @@
+/* Vendors */
 @import 'normalize.css';
+
+/* Variables and base styling */
 @import './variables.css';
-@import './typography.css';
+@import './base.css';
+
+/* Components */
+@import './code.css';
+@import './image.css';
+@import './index.css';
 @import './link.css';
+@import './list.css';
+@import './paragraph.css';
+@import './quote.css';
+@import './table.css';
+@import './typography.css';

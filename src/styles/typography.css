@@ -5,12 +5,17 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700);
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--headings-font-family);
-  font-weight: var(--headings-font-weight);
-  line-height: var(--headings-line-height);
-  color: var(--headings-color);
-  margin-top: 0;
-  margin-bottom: var(--headings-margin-bottom);
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  line-height: var(--heading-line-height);
+  color: var(--heading-color);
+  margin-top: var(--heading-margin-top);
+  margin-bottom: var(--heading-margin-bottom);
+}
+
+h3 {
+  font-weight: normal;
+  color: var(--color-gray);
 }
 
 h1 { font-size: var(--h1) }

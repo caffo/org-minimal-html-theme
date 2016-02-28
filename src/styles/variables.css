@@ -1,17 +1,18 @@
 :root {
   /* Global */
   --font-size-base: 16px;
-  --font-size: 1rem;
+  --font-size: 1.25rem;
   --line-height: 1.5;
 
   /* Colors */
   --color: #3A3A3A;
   --color-bg: #FFF;
+  --color-gray: rgba(0, 0, 0, .45);
 
   /* Typography scale */
-  --h1: 2rem;
-  --h2: 1.5rem;
-  --h3: 1.25rem;
+  --h1: 2.55rem;
+  --h2: 2rem;
+  --h3: 1.75rem;
   --h4: 1rem;
   --h5: 0.875rem;
   --h6: 0.75rem;
@@ -27,20 +28,24 @@
   --font-weight-extra-bold: 800;
 
   /* Headings */
-  --headings-font-family: var(--font-family-sans-serif);
-  --headings-font-weight: var(--font-weight-bold);
-  --headings-line-height: var(--line-height);
-  --headings-color: var(--color);
-  --headings-margin-bottom: calc(var(--font-size) * 0.5);
+  --heading-font-family: var(--font-family-sans-serif);
+  --heading-font-weight: var(--font-weight-bold);
+  --heading-line-height: 1.15;
+  --heading-color: var(--color);
+  --heading-margin-top: 2.5rem;
+  --heading-margin-bottom: 1.5rem;
 
   /* Paragraphs */
-  --paragraphs-margin-bottom: var(--font-size);
+  --paragraph-margin-bottom: 2.5rem;
 
   /* Lists */
   --lists-margin-bottom: var(--font-size);
 
   /* Quotes */
-  --quotes-margin-bottom: var(--font-size);
+  --quote-margin-bottom: var(--font-size);
+  --quote-divisor-color: var(--color);
+  --quote-divisor-size: 3px;
+  --quote-divisor-left: -20px;
 
   /* Code */
   --code-margin-bottom: var(--font-size);
