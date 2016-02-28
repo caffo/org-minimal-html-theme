@@ -4,7 +4,39 @@
  ==============================================================================
 */
 
+pre, code {
+  font-family: var(--font-family-monospace);
+  font-size: var(--font-size-base);
+  background-color: var(--color-lighter-gray);
+  border: var(--code-border);
+  border-radius: var(--code-border-radius);
+}
+
+/*
+ Code » Multi line code snippet
+ ==============================================================================
+*/
+
 pre {
   margin-top: 0;
+  padding: 0.5rem;
   margin-bottom: var(--code-margin-bottom);
+}
+
+/*
+ Code » Inline code snippet
+ ==============================================================================
+*/
+
+code {
+  padding-top: var(--code-padding-vertical);
+  padding-bottom: var(--code-padding-vertical);
+  padding-left: var(--code-padding-horizontal);
+  padding-right: var(--code-padding-horizontal);
+}
+
+code::before,
+code::after {
+  content: '\00a0';
+  letter-spacing: -0.2rem;
 }
