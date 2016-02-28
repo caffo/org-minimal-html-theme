@@ -2,13 +2,12 @@
   "private": true,
   "scripts": {
     "start": "npm run watch & npm run server",
-    "styles": "postcss -u postcss-import -u postcss-cssnext -u autoprefixer -c options.json -o dist/bundle.css src/styles/index.css",
+    "styles": "postcss -u postcss-import -u postcss-cssnext -c options.json -o dist/bundle.css src/styles/index.css",
     "compress": "cssnano < dist/bundle.css > dist/bundle.min.css",
     "server": "browser-sync start --files dist/bundle.css --server --no-notify --no-open",
     "watch": "npm run styles -- -w"
   },
   "devDependencies": {
-    "autoprefixer": "^6.3.3",
     "browser-sync": "^2.11.1",
     "cssnano-cli": "^1.0.3",
     "postcss-cli": "^2.5.1",
