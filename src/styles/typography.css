@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--headings-font-weight);
   line-height: var(--headings-line-height);
   color: var(--headings-color);
+  margin-top: 0;
   margin-bottom: var(--headings-margin-bottom);
 }
 

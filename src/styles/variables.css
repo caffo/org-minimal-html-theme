@@ -1,12 +1,12 @@
 :root {
   /* Global */
-  --font-size: 16px;
+  --font-size-base: 16px;
+  --font-size: 1rem;
   --line-height: 1.5;
 
   /* Colors */
   --color: #3A3A3A;
   --color-bg: #FFF;
-  --color-transparent: rgba(0, 0, 0, 0);
 
   /* Typography scale */
   --h1: 2rem;
@@ -31,5 +31,6 @@
   --headings-font-weight: var(--font-weight-bold);
   --headings-line-height: var(--line-height);
   --headings-color: var(--color);
-  --headings-margin-bottom: 0.5rem;
+  --headings-margin-bottom: calc(var(--font-size) * 0.5);
+
 }

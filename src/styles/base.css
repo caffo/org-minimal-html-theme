@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+  font-size: var(--font-size-base);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-family-serif);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--color);
+  background-color: var(--color-bg);
+}

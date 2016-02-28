@@ -4,14 +4,6 @@
  ==============================================================================
 */
 
-:root {
-  --link-shadow: -1px -1px 0 #FFF, -1px -1px 0 #FFF, -1px -1px 0 #FFF;
-  --link-shadow-offset-x: 2px;
-  --link-shadow-offset-y: 3px;
-  --link-color: var(--color);
-  --link-color-underline: color(var(--color) alpha(-20%));
-}
-
 a {
   color: var(--link-color);
   text-decoration: none;
