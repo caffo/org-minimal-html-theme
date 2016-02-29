@@ -1,10 +1,13 @@
 [autoprefixer-url]: https://github.com/postcss/autoprefixer
+[demo-url]: http://orgmode-minimal-theme.surge.sh
 [node-url]: https://nodejs.org
 [npm-url]: https://npmjs.org
 
 # org-minmal-html-theme
 
 > Simple and beautiful orgmode theme
+
+<sup>Check out [the demo][demo-url]</sup>
 
 ## Development
 
