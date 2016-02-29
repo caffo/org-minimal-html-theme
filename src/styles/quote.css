@@ -5,13 +5,13 @@
 */
 
 /*
-1. Quotes should be in italic.
-2. Add some bottom margin for better content readability.
-3. Add a left vertical divisor that bleeds out of the text container.
+1. Quotes should be in italic
+2. Add some bottom margin for better content readability
+3. Add a left vertical divisor that bleeds out of the text container
+4. Support citation through a `<footer>` element
 */
 
 blockquote {
-  font-style: italic; /* [1] */
   margin: 0 0 var(--quote-margin-bottom); /* [2] */
   position: relative;
 }
@@ -24,4 +24,15 @@ blockquote::before { /* [3] */
   width: var(--quote-divisor-size);
   height: 115%;
   background: var(--quote-divisor-color);
+}
+
+blockquote p {
+  font-style: italic; /* [1] */
+  margin-bottom: 0;
+}
+
+blockquote footer::before { /* [4] */
+  content: var(--quote-citation-symbol);
+  color: var(--quote-citation-symbol-color);
+  margin-right: var(--quote-citation-margin-right);
 }

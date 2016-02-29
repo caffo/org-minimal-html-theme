@@ -74,6 +74,9 @@
   --quote-divisor-color: var(--color);
   --quote-divisor-size: 3px;
   --quote-divisor-left: -20px;
+  --quote-citation-symbol: '─';
+  --quote-citation-symbol-color: var(--color-gray);
+  --quote-citation-margin-right: 0.5rem;
 
   /* Code */
   --code-font-size: 80%;
