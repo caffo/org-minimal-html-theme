@@ -74,6 +74,7 @@
   --quote-divisor-left: -20px;
 
   /* Code */
+  --code-font-size: 80%;
   --code-margin-bottom: var(--font-size);
   --code-border-radius: 3px;
   --code-padding-vertical: 0.2rem;

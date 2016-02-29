@@ -11,10 +11,13 @@ Simple wrapper that makes content centered and gives proper dimension.
 #content, .content {
   /* Container */
   margin: 0 auto;
-  max-width: var(--content-max-width);
-  padding: var(--content-padding-vertical) var(--content-padding-horizontal);
 
   /* Content */
   margin-top: var(--content-margin-top);
   margin-bottom: var(--content-margin-bottom);
+
+  @media (--medium-screens) {
+    max-width: var(--content-max-width);
+    padding: var(--content-padding-vertical) var(--content-padding-horizontal);
+  }
 }

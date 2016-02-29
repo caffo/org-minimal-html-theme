@@ -1,8 +1,9 @@
 /* Vendors */
 @import 'normalize.css';
 
-/* Variables and base styling */
+/* Variables, media queries and base styling */
 @import './variables.css';
+@import './media.css';
 @import './base.css';
 
 /* Components */

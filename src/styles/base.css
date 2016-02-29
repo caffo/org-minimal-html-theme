@@ -9,12 +9,16 @@ Base styling for "root" elements.
 
 1. `border-box` please
 2. Set default font size (in pixels)
-3. Set base typography properties and colors.
+3. Set base typography properties and colors
 */
 
 html {
   box-sizing: border-box; /* [1] */
-  font-size: var(--font-size-base); /* [2] */
+  font-size: 14px;
+
+  @media (--medium-screens) {
+    font-size: var(--font-size-base); /* [2] */
+  }
 }
 
 *,
