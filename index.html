@@ -5,16 +5,200 @@
   <title></title>
   <link rel="stylesheet" href="dist/bundle.css">
   <style>
+    .header a {
+      background: none;
+      position: relative;
+    }
+
+    .header a:hover::before {
+      opacity: 0.15;
+    }
+
+    .header a::before {
+      content: '#';
+      position: absolute;
+      color: #000;
+      opacity: 0;
+      background: transparent;
+      left: -40px;
+      width: 40px;
+      transition: opacity 0.15s linear;
+    }
+
+    .header p {
+      margin-bottom: 1rem;
+    }
+
+    .article {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 1.5rem;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <header class="hero">
-      <h1>orgmode minimal theme</h1>
-      <p>Simple and beautiful <code>orgmode</code> theme</p>
-    </header>
-    <h2>Links</h2>
-    <a href="/">a fancy custom underline</a>
+  <div id="content">
+    <section id="headings">
+      <header class="header">
+        <h1><a href="#headings">Headings</a></h1>
+      </header>
+      <article class="article">
+        <h1 style="margin-top: 0;">The quick brown fox</h1>
+        <h2>The quick brown fox</h2>
+        <h3>The quick brown fox</h3>
+        <h4>The quick brown fox</h4>
+        <h5>The quick brown fox</h5>
+        <h6>The quick brown fox</h6>
+      </article>
+    </section>
+    <section id="unordered-lists">
+      <header class="header">
+        <h1><a href="#unordered-lists">Unordered Lists</a></h1>
+      </header>
+      <article class="article">
+        <ul>
+          <li>Level 1</li>
+          <ul>
+            <li>Level 2</li>
+            <ul>
+              <li>Level 3</li>
+              <ul>
+                <li>Level 4</li>
+                <ul>
+                  <li>Level 5</li>
+                </ul>
+              </ul>
+            </ul>
+          </ul>
+        </ul>
+      </article>
+    </section>
+    <section id="ordered-lists">
+      <header class="header">
+        <h1><a href="#ordered-lists">Ordered Lists</a></h1>
+      </header>
+      <article class="article">
+        <ol>
+          <li>Level 1</li>
+          <ol>
+            <li>Level 2</li>
+            <ol>
+              <li>Level 3</li>
+              <ol>
+                <li>Level 4</li>
+                <ol>
+                  <li>Level 5</li>
+                </ol>
+              </ol>
+            </ol>
+          </ol>
+        </ol>
+      </article>
+    </section>
+    <section id="paragraphs">
+      <header class="header">
+        <h1><a href="#paragraphs">Paragraphs</a></h1>
+      </header>
+      <article class="article">
+        <p>Elit quae atque ipsam consequuntur vitae. Porro quas ducimus sequi optio accusamus. Culpa magni voluptate fuga eius molestias cum minus atque a asperiores minima sint minus dolor nesciunt? Explicabo quibusdam?</p>
+        <p><a href="/">Link to something</a></p>
+        <p><em>Italic text</em></p>
+        <p><strong>Bold text</strong></p>
+        <p><u>Text with underline</u></p>
+        <p><strike>Strike text</strike></p>
+        <p><sup>Superscript text</sup></p>
+        <p><sub>Subscript text</sub></p>
+      </article>
+    </section>
+    <section id="quotes">
+      <header class="header">
+        <h1><a href="#quotes">Quotes</a></h1>
+      </header>
+      <article class="article">
+        <blockquote>“The greatest weapon against stress is our ability to choose one thought over another.”</blockquote>
+      </article>
+    </section>
+    <section id="inline-code">
+      <header class="header">
+        <h1><a href="#inline-code">Inline code</a></h1>
+      </header>
+      <article class="article">
+        <p>Simply run <code>npm install</code> and then <code>npm start</code>.</p>
+      </article>
+    </section>
+    <section id="multiline-code">
+      <header class="header">
+        <h1><a href="#multiline-code">Multiline code</a></h1>
+      </header>
+      <article class="article">
+        <pre>'use strict';<br /><br /><strong>let</strong> scripts = <strong>require</strong>('./package.json').scripts;<br /><strong>let</strong> <strong>keys</strong> = <strong>Object</strong>.<strong>keys</strong>(scripts);<br /><strong>let</strong> size = <strong>keys</strong>.length;<br /><strong>let</strong> divisor = <strong>new</strong> <strong>Array</strong>(5).join('=') + '\n';<br /><strong>let</strong> output = divisor + size + ' tasks:\n';<br /><br /><strong>Object</strong>.<strong>keys</strong>(scripts).<strong>forEach</strong>(script => {<br />  output += script + '\n';<br />});<br /><br /><strong><strong>process</strong></strong>.stdout.write(output);</pre>
+      </article>
+    </section>
+    <section id="checklists">
+      <header class="header">
+        <h1><a href="#checklists">Checklists</a></h1>
+      </header>
+      <article class="article">
+        <h3 style="margin-top: 0;">Shopping list</h3>
+        <ul class="checklist">
+          <li>
+            <input type="checkbox" disabled>
+            Buy tomatoes 🍅
+          </li>
+          <li>
+            <input type="checkbox" disabled>
+            Buy shampoo 🙆
+          </li>
+          <li>
+            <input type="checkbox" disabled checked>
+            Buy coffee powder ☕️
+          </li>
+          <li>
+            <input type="checkbox" disabled checked>
+            Buy bananas 🍌
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section id="tables">
+      <header class="header">
+        <h1><a href="#tables">Tables</a></h1>
+      </header>
+      <article class="article">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>GitHub</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Rodrigo Franco</td>
+              <td><a href="https://github.com/caffo">@caffo</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Rafael Rinaldi</td>
+              <td><a href="https://github.com/rafaelrinaldi">@rafaelrinaldi</a></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Robert C. Martin</td>
+              <td><a href="https://github.com/unclebob">@unclebob</a></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>TJ Holowaychuk</td>
+              <td><a href="https://github.com/tj">@tj</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
   </div>
 </body>
 </html>
