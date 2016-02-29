@@ -40,6 +40,7 @@ The setup is based entirely in npm scripts.
 | `compress` | Generates an optimized CSS bundle under `dist/bundle.min.css` |
 | `server` | Startup a local development server with live reload enabled |
 | `watch` | Watch for file changes and then recompile what's changed |
+| `lint` | Lint CSS code |
 
 ### File structure
 
@@ -48,6 +49,7 @@ The setup is based entirely in npm scripts.
 ├── dist
 │   ├── bundle.css
 │   └── bundle.min.css
+├── .stylelintrc
 ├── index.html
 ├── options.json
 ├── package.json
@@ -60,6 +62,7 @@ The setup is based entirely in npm scripts.
 | `dist` | Distribution folder |
 | `dist/bundle.css` | Non optimized and browser ready CSS bundle |
 | `dist/bundle.min.css` | Optimized CSS bundle |
+| `.stylelintrc` | CSS linter configuration |
 | `index.html` | Simple HTML page to test theme features |
 | `options.json` | [Autoprefixer][autoprefixer-url] configuration options |
 | `package.json` | [npm][npm-url] manifest |
