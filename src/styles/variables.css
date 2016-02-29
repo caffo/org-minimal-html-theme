@@ -68,10 +68,20 @@
   --code-padding-horizontal: 0;
   --code-border: 1px solid var(--color-light-gray);
 
+  /* Underline */
+  --underline-shadow: -1px -1px 0 #FFF, -1px -1px 0 #FFF, -1px -1px 0 #FFF;
+  --underline-shadow-offset-x: 2px;
+  --underline-shadow-offset-y: 3px;
+  --underline-color: var(--color);
+
+  /* Tables */
+  --table-border: 1px solid var(--color-light-gray);
+  --table-bg: var(--color-lighter-gray);
+  --table-heading-text-align: left;
+
   /* Links */
-  --link-shadow: -1px -1px 0 #FFF, -1px -1px 0 #FFF, -1px -1px 0 #FFF;
-  --link-shadow-offset-x: 2px;
-  --link-shadow-offset-y: 3px;
   --link-color: var(--color);
-  --link-color-underline: red;
+
+  /* Checklists */
+  --checklist-margin-right: 0.5rem;
 }
