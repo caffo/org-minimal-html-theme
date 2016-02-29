@@ -57,7 +57,7 @@ ul li::before {
  ==============================================================================
 */
 
-ul li + ul li::before {
+ul li > ul li::before {
   content: var(--list-symbol-level2);
   font-size: 11px;
   top: 10px;
@@ -68,7 +68,7 @@ ul li + ul li::before {
  ==============================================================================
 */
 
-ul li + ul li + ul li::before {
+ul li > ul li > ul li::before {
   content: var(--list-symbol-level3);
   font-size: 15px;
   top: 7px;
@@ -79,7 +79,7 @@ ul li + ul li + ul li::before {
  ==============================================================================
 */
 
-ul li + ul li + ul li + ul li::before {
+ul li > ul li > ul li > ul li::before {
   content: var(--list-symbol-level4);
 }
 
@@ -88,7 +88,7 @@ ul li + ul li + ul li + ul li::before {
  ==============================================================================
 */
 
-ul li + ul li + ul li + ul li + ul li::before {
+ul li > ul li > ul li > ul li > ul li::before {
   content: var(--list-symbol-level5);
   font-size: 1rem;
   top: 2.5px;
@@ -99,22 +99,22 @@ ul li + ul li + ul li + ul li + ul li::before {
  ==============================================================================
 */
 
-/**
- * First level uses the default list style, which is `decimal`.
- **/
+ol {
+  list-style: var(--ordered-list-level1);
+}
 
-ol > ol {
+ol ol {
   list-style: var(--ordered-list-level2);
 }
 
-ol > ol > ol {
+ol ol ol {
   list-style: var(--ordered-list-level3);
 }
 
-ol > ol > ol > ol {
+ol ol ol ol {
   list-style: var(--ordered-list-level4);
 }
 
-ol > ol > ol > ol > ol {
+ol ol ol ol ol {
   list-style: var(--ordered-list-level5);
 }

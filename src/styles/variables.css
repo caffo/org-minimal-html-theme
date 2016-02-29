@@ -66,6 +66,7 @@
   --list-symbol-level5: '»';
 
   /* Ordered lists */
+  --ordered-list-level1: decimal;
   --ordered-list-level2: lower-roman;
   --ordered-list-level3: lower-latin;
   --ordered-list-level4: upper-roman;
