@@ -23,7 +23,7 @@ $ brew update && brew install node
 ### Setup
 
 ```sh
-$ # Install npm developer dependencies
+$ # Install npm dependencies
 $ npm i
 $ # Start development mode
 $ npm start
