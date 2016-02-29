@@ -1,0 +1,15 @@
+/*
+ ==============================================================================
+ Highlight
+ ==============================================================================
+*/
+
+.highlight {
+  text-decoration: none;
+  color: var(--highlight-color);
+  background-color: var(--highlight-bg);
+}
+
+.highlight:hover {
+  background-color: var(--highlight-bg-hover);
+}
