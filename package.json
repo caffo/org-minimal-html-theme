@@ -6,7 +6,8 @@
     "compress": "cssnano < dist/bundle.css > dist/bundle.min.css",
     "server": "browser-sync start --files dist/bundle.css --server --no-notify --no-open",
     "watch": "npm run styles -- -w",
-    "lint": "stylelint src/styles/*.css"
+    "lint": "stylelint src/styles/*.css",
+    "test": "npm run lint"
   },
   "devDependencies": {
     "browser-sync": "^2.11.1",
