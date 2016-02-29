@@ -87,9 +87,8 @@
   --code-border: 1px solid var(--color-light-gray);
 
   /* Underline */
-  --underline-shadow: -1px -1px 0 #FFF, -1px -1px 0 #FFF, -1px -1px 0 #FFF;
-  --underline-shadow-offset-x: 2px;
-  --underline-shadow-offset-y: 3px;
+  --underline-border-offset-x: 2px;
+  --underline-border-offset-y: 3px;
   --underline-color: var(--color);
 
   /* Tables */
