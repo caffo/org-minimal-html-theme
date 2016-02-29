@@ -5,8 +5,18 @@
 */
 
 table {
+  width: 100%;
+  max-width: 100%;
 }
 
-th {
-  text-align: left;
+th, td {
+  text-align: var(--table-heading-text-align);
+  padding: 1rem;
+  line-height: var(--line-height);
+  vertical-align: top;
+  border-top: var(--table-border);
+}
+
+tbody > tr:nth-of-type(odd) {
+  background-color: var(--table-bg);
 }
