@@ -1,3 +1,9 @@
+/*
+ ==============================================================================
+ Project variables
+ ==============================================================================
+*/
+
 :root {
   /* Global */
   --font-size-base: 18px;
@@ -54,6 +60,12 @@
   --list-symbol-level3: '◼';
   --list-symbol-level4: '◻';
   --list-symbol-level5: '»';
+
+  /* Ordered lists */
+  --ordered-list-level2: lower-roman;
+  --ordered-list-level3: lower-latin;
+  --ordered-list-level4: upper-roman;
+  --ordered-list-level5: upper-latin;
 
   /* Quotes */
   --quote-margin-bottom: var(--font-size);

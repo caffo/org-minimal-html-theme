@@ -3,15 +3,24 @@
  ==============================================================================
 */
 
+/*
+Checklist is just a convenient way to display a list of tasks.
+
+1. Reset default padding.
+2. Remove list bullet by adding a valid empty character
+3. Add a little spacing between the checkbox and the label
+4. Adjust checkbox y position because ¯\_(webfonts)_/¯
+*/
+
 .checklist {
-  padding: 0;
+  padding: 0; /* [1] */
 }
 
 .checklist li::before {
-  content: '\00a0';
+  content: '\00a0'; /* [2] */
 }
 
 .checklist li input[type=checkbox] {
-  margin-right: var(--checklist-margin-right);
-  transform: translateY(-2px);
+  margin-right: var(--checklist-margin-right); /* [3] */
+  transform: translateY(-2px); /* [4] */
 }

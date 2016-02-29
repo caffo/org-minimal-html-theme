@@ -28,6 +28,11 @@ pre {
  ==============================================================================
 */
 
+/*
+1. Add a valid empty character to both pseudo selectors to achieve nice padding
+2. Adjust letter spacing for better readability
+*/
+
 code {
   padding-top: var(--code-padding-vertical);
   padding-bottom: var(--code-padding-vertical);
@@ -37,6 +42,6 @@ code {
 
 code::before,
 code::after {
-  content: '\00a0';
-  letter-spacing: -0.2rem;
+  content: '\00a0'; /* [1] */
+  letter-spacing: -0.2rem; /* [2] */
 }

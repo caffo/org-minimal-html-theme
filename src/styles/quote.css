@@ -4,13 +4,19 @@
  ==============================================================================
 */
 
+/*
+1. Quotes should be in italic.
+2. Add some bottom margin for better content readability.
+3. Add a left vertical divisor that bleeds out of the text container.
+*/
+
 blockquote {
-  font-style: italic;
-  margin: 0 0 var(--quote-margin-bottom);
+  font-style: italic; /* [1] */
+  margin: 0 0 var(--quote-margin-bottom); /* [2] */
   position: relative;
 }
 
-blockquote::before {
+blockquote::before { /* [3] */
   content: '';
   position: absolute;
   left: var(--quote-divisor-left);

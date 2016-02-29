@@ -5,20 +5,24 @@
 */
 
 /*
-Used for s̶t̶r̶i̶k̶e̶t̶h̶r̶o̶u̶g̶h̶ text effect
+Used for s̶t̶r̶i̶k̶e̶t̶h̶r̶o̶u̶g̶h̶ text effect.
+
+1. Remove default line.
+2. Add custom line.
+3. Center the line vertically.
 */
 
 strike {
-  text-decoration: none;
+  text-decoration: none; /* [1] */
   position: relative;
 }
 
-strike::after {
+strike::after { /* [2] */
   content: '';
   position: absolute;
   width: 100%;
   height: 1px;
   background-color: var(--color);
   left: 0;
-  top: 50%;
+  top: 50%; /* [3] */
 }

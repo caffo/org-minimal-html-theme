@@ -4,22 +4,33 @@
  ==============================================================================
 */
 
+/*
+1. Remove bottom margin of children lists
+*/
+
+
 ol, ul {
   margin-top: 0;
   margin-bottom: var(--list-margin-bottom);
 }
 
-/* Remove bottom margin of children lists */
 ol ol,
 ul ul,
 ol ul,
 ul ol {
-  margin-bottom: 0;
+  margin-bottom: 0; /* [1] */
 }
 
 /*
  List » Unordered List
  ==============================================================================
+*/
+
+/*
+To make custom bullets and unique bullets per level we use hand picked unicode
+characters.
+
+Unordered lists supported until level 5.
 */
 
 ul {
@@ -88,18 +99,22 @@ ul li + ul li + ul li + ul li + ul li::before {
  ==============================================================================
 */
 
+/*
+First level uses the default list style, which is `decimal`.
+*/
+
 ol > ol {
-  list-style: lower-roman;
+  list-style: var(--ordered-list-level2);
 }
 
 ol > ol > ol {
-  list-style: lower-latin;
+  list-style: var(--ordered-list-level3);
 }
 
 ol > ol > ol > ol {
-  list-style: upper-roman;
+  list-style: var(--ordered-list-level4);
 }
 
 ol > ol > ol > ol > ol {
-  list-style: upper-latin;
+  list-style: var(--ordered-list-level5);
 }

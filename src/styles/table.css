@@ -4,19 +4,26 @@
  ==============================================================================
 */
 
-table {
+/*
+1. Make sure tables will always have full width.
+2. Setup table cell text positioning.
+3. Add a horizontal divisor for every table row.
+4. Odd table rows should have a different background color.
+*/
+
+table { /* [1] */
   width: 100%;
   max-width: 100%;
 }
 
 th, td {
-  text-align: var(--table-heading-text-align);
+  text-align: var(--table-heading-text-align); /* [2] */
   padding: 1rem;
   line-height: var(--line-height);
   vertical-align: top;
-  border-top: var(--table-border);
+  border-top: var(--table-border); /* [3] */
 }
 
-tbody > tr:nth-of-type(odd) {
+tbody > tr:nth-of-type(odd) { /* [4] */
   background-color: var(--table-bg);
 }

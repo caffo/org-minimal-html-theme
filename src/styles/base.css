@@ -1,15 +1,29 @@
+/*
+ ==============================================================================
+ Base
+ ==============================================================================
+*/
+
+/*
+Base styling for "root" elements.
+
+1. `border-box` please
+2. Set default font size (in pixels)
+3. Set base typography properties and colors.
+*/
+
 html {
-  box-sizing: border-box;
-  font-size: var(--font-size-base);
+  box-sizing: border-box; /* [1] */
+  font-size: var(--font-size-base); /* [2] */
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: inherit; /* [1] */
 }
 
-body {
+body { /* [3] */
   font-family: var(--font-family-serif);
   font-size: var(--font-size);
   line-height: var(--line-height);
