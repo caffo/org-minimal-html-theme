@@ -5,14 +5,16 @@
     "styles": "postcss -u postcss-import -u postcss-cssnext -c options.json -o dist/bundle.css src/styles/index.css",
     "compress": "cssnano < dist/bundle.css > dist/bundle.min.css",
     "server": "browser-sync start --files dist/bundle.css --server --no-notify --no-open",
-    "watch": "npm run styles -- -w"
+    "watch": "npm run styles -- -w",
+    "lint": "stylelint src/styles/*.css"
   },
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "cssnano-cli": "^1.0.3",
     "postcss-cli": "^2.5.1",
     "postcss-cssnext": "^2.4.0",
-    "postcss-import": "^8.0.2"
+    "postcss-import": "^8.0.2",
+    "stylelint": "^4.4.0"
   },
   "dependencies": {
     "normalize.css": "^3.0.3"
