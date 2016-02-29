@@ -6,17 +6,17 @@
 @import './base.css';
 
 /* Components */
+@import './checklist.css';
 @import './code.css';
 @import './content.css';
+@import './heading.css';
 @import './image.css';
 @import './index.css';
 @import './link.css';
 @import './list.css';
-@import './checklist.css';
 @import './paragraph.css';
 @import './quote.css';
 @import './table.css';
-@import './typography.css';
 
 /* Custom */
 @import './underline.css';
