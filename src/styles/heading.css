@@ -11,10 +11,14 @@ h4,
 h5,
 h6 {
   font-family: var(--heading-font-family);
-  line-height: var(--heading-line-height);
+  line-height: 1;
   color: var(--heading-color);
   margin-top: var(--heading-margin-top);
   margin-bottom: var(--heading-margin-bottom);
+
+  @media (--medium-screens) {
+    line-height: var(--heading-line-height);
+  }
 }
 
 /*
