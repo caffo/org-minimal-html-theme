@@ -5,10 +5,12 @@
 */
 
 /*
-1. Make sure tables will always have full width.
-2. Setup table cell text positioning.
-3. Add a horizontal divisor for every table row.
-4. Odd table rows should have a different background color.
+1. Make sure tables will always have full width
+2. Setup table cell text positioning
+3. Add a horizontal divisor for every table row
+4. Odd table rows should have a different background color
+5. Remove border from first header row
+6. Add a special border for the first header row
 */
 
 table { /* [1] */
@@ -26,4 +28,12 @@ th, td {
 
 tbody > tr:nth-of-type(odd) { /* [4] */
   background-color: var(--table-bg);
+}
+
+thead > tr:first-of-type > th { /* [5] */
+  border-top: 0;
+}
+
+thead > tr:first-of-type { /* [6] */
+  border-bottom: var(--table-heading-border);
 }

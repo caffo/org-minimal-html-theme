@@ -91,6 +91,7 @@
   --table-border: 1px solid var(--color-light-gray);
   --table-bg: var(--color-lighter-gray);
   --table-heading-text-align: left;
+  --table-heading-border: 3px solid var(--color-light-gray);
 
   /* Links */
   --link-color: var(--color);
