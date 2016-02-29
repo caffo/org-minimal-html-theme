@@ -4,7 +4,8 @@
  ==============================================================================
 */
 
-pre, code {
+pre,
+code {
   font-family: var(--font-family-monospace);
   background-color: var(--color-lighter-gray);
   border: var(--code-border);

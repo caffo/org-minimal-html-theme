@@ -8,8 +8,8 @@
 1. Remove bottom margin of children lists
 */
 
-
-ol, ul {
+ol,
+ul {
   margin-top: 0;
   margin-bottom: var(--list-margin-bottom);
 }

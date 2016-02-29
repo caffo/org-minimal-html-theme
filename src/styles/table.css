@@ -18,7 +18,8 @@ table { /* [1] */
   max-width: 100%;
 }
 
-th, td {
+th,
+td {
   text-align: var(--table-heading-text-align); /* [2] */
   padding: 1rem;
   line-height: var(--line-height);

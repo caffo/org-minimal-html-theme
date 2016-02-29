@@ -14,5 +14,10 @@ Fancy text underline used by `<a>` and `<u>` elements.
   color: var(--underline-color);
   text-decoration: none;
   text-shadow: var(--underline-shadow);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) var(--underline-shadow-offset-x), var(--underline-color) var(--underline-shadow-offset-x), var(--underline-color) var(--underline-shadow-offset-y), rgba(0, 0, 0, 0) var(--underline-shadow-offset-y));
+  background-image: linear-gradient(
+    to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) var(--underline-shadow-offset-x),
+    var(--underline-color) var(--underline-shadow-offset-x),
+    var(--underline-color) var(--underline-shadow-offset-y),
+    rgba(0, 0, 0, 0) var(--underline-shadow-offset-y)
+  );
 }

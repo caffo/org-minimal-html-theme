@@ -4,7 +4,12 @@
 /* Serif font: PT Serif */
 @import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700);
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--heading-font-family);
   line-height: var(--heading-line-height);
   color: var(--heading-color);
@@ -17,7 +22,8 @@ h1, h2, h3, h4, h5, h6 {
  ==============================================================================
 */
 
-h1, h2 {
+h1,
+h2 {
   font-weight: var(--heading-font-weight);
 }
 
@@ -26,14 +32,17 @@ h1, h2 {
  ==============================================================================
 */
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
   color: var(--color-gray);
 }
 
-h1 { font-size: var(--h1) }
-h2 { font-size: var(--h2) }
-h3 { font-size: var(--h3) }
-h4 { font-size: var(--h4) }
-h5 { font-size: var(--h5) }
-h6 { font-size: var(--h6) }
+h1 { font-size: var(--h1); }
+h2 { font-size: var(--h2); }
+h3 { font-size: var(--h3); }
+h4 { font-size: var(--h4); }
+h5 { font-size: var(--h5); }
+h6 { font-size: var(--h6); }

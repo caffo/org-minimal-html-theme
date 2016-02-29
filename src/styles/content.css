@@ -8,7 +8,8 @@
 Simple wrapper that makes content centered and gives proper dimension.
 */
 
-#content, .content {
+#content,
+.content {
   /* Container */
   margin: 0 auto;
 
