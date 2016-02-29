@@ -9,6 +9,19 @@ ol, ul {
   margin-bottom: var(--list-margin-bottom);
 }
 
+/* Remove bottom margin of children lists */
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+/*
+ List » Unordered List
+ ==============================================================================
+*/
+
 ul {
   list-style: none;
 }
@@ -18,7 +31,7 @@ ul li {
 }
 
 /*
- List » Level 1
+ List » Unordered List » Level 1
  ==============================================================================
 */
 
@@ -29,7 +42,7 @@ ul li::before {
 }
 
 /*
- List » Level 2
+ List » Unordered List » Level 2
  ==============================================================================
 */
 
@@ -40,7 +53,7 @@ ul li + ul li::before {
 }
 
 /*
- List » Level 3
+ List » Unordered List » Level 3
  ==============================================================================
 */
 
@@ -51,7 +64,7 @@ ul li + ul li + ul li::before {
 }
 
 /*
- List » Level 4
+ List » Unordered List » Level 4
  ==============================================================================
 */
 
@@ -60,7 +73,7 @@ ul li + ul li + ul li + ul li::before {
 }
 
 /*
- List » Level 5
+ List » Unordered List » Level 5
  ==============================================================================
 */
 
@@ -71,11 +84,22 @@ ul li + ul li + ul li + ul li + ul li::before {
 }
 
 /*
-Remove bottom margin of children lists.
+ List » Ordered List
+ ==============================================================================
 */
-ol ol,
-ul ul,
-ol ul,
-ul ol {
-  margin-bottom: 0;
+
+ol > ol {
+  list-style: lower-roman;
+}
+
+ol > ol > ol {
+  list-style: lower-latin;
+}
+
+ol > ol > ol > ol {
+  list-style: upper-roman;
+}
+
+ol > ol > ol > ol > ol {
+  list-style: upper-latin;
 }
