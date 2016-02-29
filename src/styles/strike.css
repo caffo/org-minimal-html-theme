@@ -1,0 +1,24 @@
+/*
+ ==============================================================================
+ Strike
+ ==============================================================================
+*/
+
+/*
+Used for s̶t̶r̶i̶k̶e̶t̶h̶r̶o̶u̶g̶h̶ text effect
+*/
+
+strike {
+  text-decoration: none;
+  position: relative;
+}
+
+strike::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color);
+  left: 0;
+  top: 50%;
+}
