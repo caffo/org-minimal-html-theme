@@ -1,0 +1,17 @@
+/*
+ Checklist
+ ==============================================================================
+*/
+
+.checklist {
+  padding: 0;
+}
+
+.checklist li::before {
+  content: '\00a0';
+}
+
+.checklist li input[type=checkbox] {
+  margin-right: var(--checklist-margin-right);
+  transform: translateY(-2px);
+}
