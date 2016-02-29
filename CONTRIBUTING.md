@@ -101,3 +101,21 @@ To get the project ready for development, first install the dependencies:
 ```sh
 $ npm install
 ```
+
+### Code linting
+
+As an effort to keep the code consistent, we rely on code linting. To lint the code, simply run:
+
+```sh
+$ npm run lint
+```
+
+Note that linting is tied to the `test` script. That means any pull requests where the linting breaks, CI will break as well.
+
+### Test
+
+To run the tests, simply run the following command:
+
+```sh
+$ npm test
+```
