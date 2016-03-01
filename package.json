@@ -4,7 +4,7 @@
     "build": "npm run styles && npm run compress",
     "compress": "npm run compress-styles & npm run compress-scripts",
     "compress-scripts": "uglifyjs src/scripts/*.js -o dist/bundle.min.js -c -m -v --screw-ie8 --stats",
-    "compress-styles": "cssnano < dist/bundle.css > dist/bundle.min.css",
+    "compress-styles": "cleancss -o dist/bundle.min.css dist/bundle.css --s0",
     "lint": "stylelint src/styles/*.css && xo src/scripts/*.js --space --env=browser",
     "server": "browser-sync start --files dist/bundle.css --server --no-notify --no-open",
     "start": "npm run watch & npm run server",
@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.11.1",
-    "cssnano-cli": "^1.0.3",
+    "clean-css": "^3.4.10",
     "postcss-cli": "^2.5.1",
     "postcss-cssnext": "^2.4.0",
     "postcss-import": "^8.0.2",
