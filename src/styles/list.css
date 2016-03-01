@@ -41,6 +41,14 @@ ul li {
   position: relative;
 }
 
+/**
+ * Make sure that check list items will never display a bullet
+ */
+
+ul li[class^=o]::before {
+  content: '';
+}
+
 /*
  List » Unordered List » Level 1
  ==============================================================================

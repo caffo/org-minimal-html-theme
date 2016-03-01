@@ -24,3 +24,11 @@
   margin-right: var(--checklist-margin-right); /* [3] */
   transform: translateY(-2px); /* [4] */
 }
+
+/**
+ * Make sure the default check items never display.
+ */
+
+li[class^=o] code {
+  display: none;
+}
