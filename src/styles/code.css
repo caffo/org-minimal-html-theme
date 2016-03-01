@@ -6,6 +6,7 @@
 
 pre,
 code {
+  color: var(--code-color);
   font-family: var(--font-family-monospace);
   background-color: var(--color-lighter-gray);
   border: var(--code-border);
@@ -35,6 +36,7 @@ pre {
  */
 
 code {
+  vertical-align: var(--code-vertical-align);
   padding-top: var(--code-padding-vertical);
   padding-bottom: var(--code-padding-vertical);
   padding-left: var(--code-padding-horizontal);
