@@ -8,7 +8,7 @@
 
 /**
  * Fancy text underline used by `<a>` and `<u>` elements.
- **/
+ */
 
 @custom-selector :--underline a:not(.highlight), u;
 

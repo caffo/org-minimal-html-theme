@@ -16,8 +16,5 @@
     "postcss-cssnext": "^2.4.0",
     "postcss-import": "^8.0.2",
     "stylelint": "^4.4.0"
-  },
-  "dependencies": {
-    "normalize.css": "^3.0.3"
   }
 }

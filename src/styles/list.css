@@ -6,7 +6,7 @@
 
 /**
  * 1. Remove bottom margin of children lists
- **/
+ */
 
 ol,
 ul {
@@ -31,7 +31,7 @@ ul ol {
  * unicode characters.
  *
  * Unordered lists supported until level 5.
- **/
+ */
 
 ul {
   list-style: none;

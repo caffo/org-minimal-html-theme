@@ -1,5 +1,5 @@
-/* Vendors */
-@import 'normalize.css';
+/* Custom normalize */
+@import './normalize.css';
 
 /* Variables, media queries and base styling */
 @import './variables.css';

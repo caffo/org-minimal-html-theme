@@ -9,7 +9,7 @@
  * 2. Add some bottom margin for better content readability
  * 3. Add a left vertical divisor that bleeds out of the text container
  * 4. Support citation through a `<footer>` element
- **/
+ */
 
 blockquote {
   margin: 0 0 var(--quote-margin-bottom); /* [2] */

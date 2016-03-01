@@ -10,7 +10,7 @@
  * 1. Remove default line.
  * 2. Add custom line.
  * 3. Center the line vertically.
- **/
+ */
 
 strike {
   text-decoration: none; /* [1] */

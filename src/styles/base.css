@@ -10,7 +10,7 @@
  * 1. `border-box` please
  * 2. Set default font size (in pixels)
  * 3. Set base typography properties and colors
- **/
+ */
 
 html {
   box-sizing: border-box; /* [1] */

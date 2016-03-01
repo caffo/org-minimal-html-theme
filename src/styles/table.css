@@ -11,7 +11,7 @@
  * 4. Odd table rows should have a different background color
  * 5. Remove border from first header row
  * 6. Add a special border for the first header row
- **/
+ */
 
 table { /* [1] */
   width: 100%;

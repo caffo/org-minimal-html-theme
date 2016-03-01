@@ -32,7 +32,7 @@ pre {
 /**
  * 1. Add an empty character to both pseudo selectors to achieve nice padding
  * 2. Adjust letter spacing for better readability
- **/
+ */
 
 code {
   padding-top: var(--code-padding-vertical);

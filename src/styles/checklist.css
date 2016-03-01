@@ -10,7 +10,7 @@
  * 2. Remove list bullet by adding a valid empty character
  * 3. Add a little spacing between the checkbox and the label
  * 4. Adjust checkbox y position because ¯\_(webfonts)_/¯
- **/
+ */
 
 .checklist {
   padding: 0; /* [1] */
