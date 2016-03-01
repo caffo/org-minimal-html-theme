@@ -1,5 +1,8 @@
 [autoprefixer-url]: https://github.com/postcss/autoprefixer
 [demo-url]: http://orgmode-minimal-theme.surge.sh
+[encharm-github-url]: https://github.com/encharm
+[font-awesome-svgs-url]: https://github.com/encharm/Font-Awesome-SVG-PNG
+[font-awesome-url]: http://fortawesome.github.io/Font-Awesome
 [node-url]: https://nodejs.org
 [npm-url]: https://npmjs.org
 
@@ -69,3 +72,8 @@ The setup is based entirely in npm scripts.
 | `options.json` | [Autoprefixer][autoprefixer-url] configuration options |
 | `package.json` | [npm][npm-url] manifest |
 | `src` | Source code |
+
+## Icons
+
+All the icons we use are provided by [Font Awesome][font-awesome-url].  
+Big shout out to [@encharm][encharm-github-url] for taking the time to export them all to SVG files.
