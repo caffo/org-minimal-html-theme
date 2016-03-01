@@ -1,4 +1,4 @@
-[autoprefixer-url]: https://github.com/postcss/autoprefixer
+[postcss-url]: https://github.com/postcss/postcss
 [demo-url]: http://orgmode-minimal-theme.surge.sh
 [encharm-github-url]: https://github.com/encharm
 [font-awesome-svgs-url]: https://github.com/encharm/Font-Awesome-SVG-PNG
@@ -69,7 +69,7 @@ The setup is based entirely in npm scripts.
 | `dist/bundle.min.js` | Optimized JavaScript bundle |
 | `.stylelintrc` | CSS linter configuration |
 | `index.html` | Simple HTML page to test theme features |
-| `options.json` | [Autoprefixer][autoprefixer-url] configuration options |
+| `options.json` | [PostCSS][postcss-url] configuration options |
 | `package.json` | [npm][npm-url] manifest |
 | `src` | Source code |
 
