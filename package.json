@@ -3,7 +3,9 @@
   "scripts": {
     "start": "npm run watch & npm run server",
     "styles": "postcss -u postcss-import -u postcss-cssnext -c options.json -o dist/bundle.css src/styles/index.css",
-    "compress": "cssnano < dist/bundle.css > dist/bundle.min.css",
+    "compress-styles": "cssnano < dist/bundle.css > dist/bundle.min.css",
+    "compress-scripts": "uglifyjs src/scripts/*.js -o dist/bundle.min.js -c -m -v --screw-ie8 --stats",
+    "compress": "npm run compress-styles & npm run compress-scripts",
     "server": "browser-sync start --files dist/bundle.css --server --no-notify --no-open",
     "watch": "npm run styles -- -w",
     "lint": "stylelint src/styles/*.css && xo src/scripts/*.js --space --env=browser",
@@ -16,6 +18,7 @@
     "postcss-cssnext": "^2.4.0",
     "postcss-import": "^8.0.2",
     "stylelint": "^4.4.0",
+    "uglify-js": "^2.6.2",
     "xo": "^0.12.1"
   }
 }

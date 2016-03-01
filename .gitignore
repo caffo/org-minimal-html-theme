@@ -4,13 +4,11 @@
 # Node.js
 node_modules
 
-# Bower
-bower_components
-
 # Vim
 *.swp
 *.swo
 
 # Distribution files
-dist
+dist/*
 !dist/bundle.min.css
+!dist/bundle.min.js
