@@ -1,0 +1,20 @@
+/*
+ ==============================================================================
+ Container
+ ==============================================================================
+*/
+
+/**
+ * Useful container that centers the content within it.
+ */
+
+@custom-selector :--container #content, #postamble;
+
+:--container {
+  margin: 0 auto;
+
+  @media (--medium-screens) {
+    max-width: var(--content-max-width);
+    padding: var(--content-padding-vertical) var(--content-padding-horizontal);
+  }
+}
