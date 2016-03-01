@@ -9,7 +9,7 @@
   color: var(--postamble-color);
   padding-top: var(--postamble-padding-top);
   padding-bottom: var(--postamble-padding-bottom);
-  border-top: 2px solid var(--color-light-gray);
+  border-top: var(--postamble-border);
 }
 
 #postamble p {

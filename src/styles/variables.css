@@ -122,6 +122,7 @@
   --postamble-padding-bottom: 2rem;
   --postamble-icon-size: 1rem;
   --postamble-icon-position: 0% 40%;
+  --postamble-border: 2px solid var(--color-light-gray);
 }
 
 /* stylelint-enable */
