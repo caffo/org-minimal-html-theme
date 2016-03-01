@@ -1,3 +1,5 @@
+/* stylelint-disable property-no-vendor-prefix */
+
 /*
  ==============================================================================
  Cherry pick of Normalize rules
@@ -153,14 +155,6 @@ img {
   border: 0;
 }
 
-/**
- * Correct overflow not hidden in IE 9/10/11.
- */
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
 /* Grouping content
    ========================================================================== */
 
@@ -204,3 +198,5 @@ samp {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
+
+/* stylelint-enable */
