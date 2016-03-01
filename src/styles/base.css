@@ -50,3 +50,11 @@ body { /* [3] */
 [class^=section-number-] {
   display: none;
 }
+
+/**
+ * Make sure that all checkboxes are vertically centered
+ */
+
+input[type=checkbox] {
+  vertical-align: middle;
+}
