@@ -38,14 +38,15 @@ The setup is based entirely in npm scripts.
 
 | Command | Description |
 | --- | --- |
+| `build` | Build assets and then compress them all |
+| `compress-scripts` | Generates an optimized JavaScript bundle under `dist/bundle.min.js` |
+| `compress-styles` | Generates an optimized CSS bundle under `dist/bundle.min.css` |
+| `compress` | Compress assets in parallel |
+| `lint` | Lint CSS code |
+| `server` | Startup a local development server with live reload enabled |
 | `start` | Trigger file watching and startup a local development server |
 | `styles` | Build styles source to a distribution bundle under `dist/bundle.css` |
-| `compress-styles` | Generates an optimized CSS bundle under `dist/bundle.min.css` |
-| `compress-scripts` | Generates an optimized JavaScript bundle under `dist/bundle.min.js` |
-| `compress` | Compress assets in parallel |
-| `server` | Startup a local development server with live reload enabled |
 | `watch` | Watch for file changes and then recompile what's changed |
-| `lint` | Lint CSS code |
 
 ### File structure
 
