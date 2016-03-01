@@ -7,3 +7,27 @@
 a {
   color: var(--link-color);
 }
+
+/*
+ Links » Back to top
+ ==============================================================================
+*/
+
+.back-to-top {
+  visibility: var(--back-to-top-visibility);
+  position: fixed;
+  right: var(--back-to-top-padding);
+  bottom: var(--back-to-top-padding);
+  font-size: var(--back-to-top-font-size);
+  opacity: var(--back-to-top-initial-opacity);
+  transition: opacity 0.5s linear;
+}
+
+.back-to-top i {
+  display: inline-block;
+  background-image: url(../src/svg/arrow-up.svg);
+  background-repeat: no-repeat;
+  background-size: var(--back-to-top-font-size);
+  width: calc(var(--back-to-top-font-size) + var(--back-to-top-bleed));
+  height: var(--back-to-top-font-size);
+}

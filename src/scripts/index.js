@@ -1,9 +1,13 @@
+/* eslint-disable no-script-url */
 (function (exports) {
   'use strict';
 
+  var win = exports;
+  var doc = exports.document;
+
   // Query selector helper
   function $(selector) {
-    var lookup = exports.document.querySelectorAll(selector);
+    var lookup = doc.querySelectorAll(selector);
     return [].slice.call(lookup);
   }
 
@@ -47,7 +51,7 @@
   // Creates a simple checkbox element
   // isChecked: Whether or not it should display checked
   function createCheckbox(isChecked) {
-    var checkbox = exports.document.createElement('input');
+    var checkbox = doc.createElement('input');
     checkbox.setAttribute('type', 'checkbox');
     checkbox.setAttribute('disabled', 'disabled');
 
@@ -58,6 +62,37 @@
     return checkbox;
   }
 
+  // Add "back to top" button
+  function addBackToTop() {
+    var link = doc.createElement('a');
+    var container = doc.querySelector('body');
+
+    link.classList.add('back-to-top');
+    link.setAttribute('href', 'javascript:scroll(0, 0);');
+    link.innerHTML = '<i></i>Back to top';
+
+    container.appendChild(link);
+  }
+
+  // When scroll y position > window height it will reveal the button
+  // Will remove the event listener when conditions match
+  function checkBackToTop() {
+    if (win.scrollY > win.innerHeight) {
+      doc.querySelector('.back-to-top').style.opacity = 1;
+      doc.removeEventListener('mousewheel', checkBackToTop);
+    }
+  }
+
+  // Bootstrap lists
   setupChecklists();
   setupTasklists();
+
+  // Bootstrap "back to top"
+  addBackToTop();
+
+  if (doc.addEventListener) {
+    doc.addEventListener('mousewheel', checkBackToTop);
+    // Force check on page load
+    doc.dispatchEvent(new WheelEvent('mousewheel'));
+  }
 })(window);

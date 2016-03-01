@@ -123,6 +123,13 @@
   --postamble-icon-size: 1rem;
   --postamble-icon-position: 0% 40%;
   --postamble-border: 2px solid var(--color-light-gray);
+
+  /* Back to top */
+  --back-to-top-visibility: visible;
+  --back-to-top-padding: 1rem;
+  --back-to-top-font-size: 0.9rem;
+  --back-to-top-bleed: 0.25;
+  --back-to-top-initial-opacity: 0;
 }
 
 /* stylelint-enable */
