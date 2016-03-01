@@ -1,217 +1,762 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="dist/bundle.css">
-  <style>
-    .header a {
-      background: none;
-      position: relative;
-    }
+<!-- 2016-02-29 Mon 17:35 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Rodrigo Franco" />
+<link rel="stylesheet" type="text/css" href="dist/bundle.min.css"/>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
 
-    .header a:hover::before {
-      opacity: 0.15;
-    }
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
 
-    .header a::before {
-      content: '#';
-      position: absolute;
-      color: #000;
-      opacity: 0;
-      background: transparent;
-      left: -40px;
-      width: 40px;
-      transition: opacity 0.15s linear;
-    }
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
 
-    .header p {
-      margin-bottom: 1rem;
-    }
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
 
-    .article {
-      padding-left: 2rem;
-      padding-right: 2rem;
-      padding-top: 1.5rem;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-    }
-  </style>
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
 </head>
 <body>
-  <a href="https://github.com/caffo/org-minmal-html-theme" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: fixed; top: 0; border: 0; left: 0; transform: scale(-1, 1);"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></a>
-  <div id="content">
-    <section id="headings">
-      <header class="header">
-        <h1><a href="#headings">Headings</a></h1>
-      </header>
-      <article class="article">
-        <h1 style="margin-top: 0;">The quick brown fox</h1>
-        <h2>The quick brown fox</h2>
-        <h3>The quick brown fox</h3>
-        <h4>The quick brown fox</h4>
-        <h5>The quick brown fox</h5>
-        <h6>The quick brown fox</h6>
-      </article>
-    </section>
-    <section id="unordered-lists">
-      <header class="header">
-        <h1><a href="#unordered-lists">Unordered Lists</a></h1>
-      </header>
-      <article class="article">
-        <ul>
-          <li>Level 1
-            <ul>
-              <li>Level 2
-                <ul>
-                  <li>Level 3
-                    <ul>
-                      <li>Level 4
-                        <ul>
-                          <li>Level 5</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </article>
-    </section>
-    <section id="ordered-lists">
-      <header class="header">
-        <h1><a href="#ordered-lists">Ordered Lists</a></h1>
-      </header>
-      <article class="article">
-        <ol>
-          <li>Level 1
-            <ol>
-              <li>Level 2
-                <ol>
-                  <li>Level 3
-                    <ol>
-                      <li>Level 4
-                        <ol>
-                          <li>Level 5</li>
-                        </ol>
-                      </li>
-                    </ol>
-                  </li>
-                </ol>
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </article>
-    </section>
-    <section id="paragraphs">
-      <header class="header">
-        <h1><a href="#paragraphs">Paragraphs</a></h1>
-      </header>
-      <article class="article">
-        <p>Elit quae atque ipsam consequuntur vitae. Porro quas ducimus sequi optio accusamus. Culpa magni voluptate fuga eius molestias cum minus atque a asperiores minima sint minus dolor nesciunt? Explicabo quibusdam?</p>
-        <p><a href="/">Link to something</a></p>
-        <p><em>Italic text</em></p>
-        <p><strong>Bold text</strong></p>
-        <p><u>Text with underline</u></p>
-        <p><strike>Strike text</strike></p>
-        <p><small>Small text</small></p>
-        <p><sup>Superscript text</sup></p>
-        <p><sub>Subscript text</sub></p>
-        <p><a href="/" class="highlight">This piece of text is highlighted (hover me)</a></p>
-      </article>
-    </section>
-    <section id="quotes">
-      <header class="header">
-        <h1><a href="#quotes">Quotes</a></h1>
-      </header>
-      <article class="article">
-        <blockquote cite="https://www.goodreads.com/author/quotes/15865.William_James">
-          <p>“The greatest weapon against stress is our ability to choose one thought over another.”<p>
-          <footer><a href="https://www.goodreads.com/author/quotes/15865.William_James">William James</a></footer>
-        </blockquote>
-      </article>
-    </section>
-    <section id="inline-code">
-      <header class="header">
-        <h1><a href="#inline-code">Inline code</a></h1>
-      </header>
-      <article class="article">
-        <p>Simply run <code>npm install</code> and then <code>npm start</code>.</p>
-      </article>
-    </section>
-    <section id="multiline-code">
-      <header class="header">
-        <h1><a href="#multiline-code">Multiline code</a></h1>
-      </header>
-      <article class="article">
-        <pre>'use strict';<br /><br /><strong>let</strong> scripts = <strong>require</strong>('./package.json').scripts;<br /><strong>let</strong> <strong>keys</strong> = <strong>Object</strong>.<strong>keys</strong>(scripts);<br /><strong>let</strong> size = <strong>keys</strong>.length;<br /><strong>let</strong> divisor = <strong>new</strong> <strong>Array</strong>(5).join('=') + '\n';<br /><strong>let</strong> output = divisor + size + ' tasks:\n';<br /><br /><strong>Object</strong>.<strong>keys</strong>(scripts).<strong>forEach</strong>(script => {<br />  output += script + '\n';<br />});<br /><br /><strong><strong>process</strong></strong>.stdout.write(output);</pre>
-      </article>
-    </section>
-    <section id="checklists">
-      <header class="header">
-        <h1><a href="#checklists">Checklists</a></h1>
-      </header>
-      <article class="article">
-        <h3 style="margin-top: 0;">Shopping list</h3>
-        <ul class="checklist">
-          <li>
-            <input type="checkbox" disabled>
-            Buy tomatoes 🍅
-          </li>
-          <li>
-            <input type="checkbox" disabled>
-            Buy shampoo 🙆
-          </li>
-          <li>
-            <input type="checkbox" disabled checked>
-            Buy coffee powder ☕️
-          </li>
-          <li>
-            <input type="checkbox" disabled checked>
-            Buy bananas 🍌
-          </li>
-        </ul>
-      </article>
-    </section>
-    <section id="tables">
-      <header class="header">
-        <h1><a href="#tables">Tables</a></h1>
-      </header>
-      <article class="article">
-        <table>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Name</th>
-              <th>GitHub</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Rodrigo Franco</td>
-              <td><a href="https://github.com/caffo">@caffo</a></td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Rafael Rinaldi</td>
-              <td><a href="https://github.com/rafaelrinaldi">@rafaelrinaldi</a></td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Robert C. Martin</td>
-              <td><a href="https://github.com/unclebob">@unclebob</a></td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>TJ Holowaychuk</td>
-              <td><a href="https://github.com/tj">@tj</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </article>
-    </section>
-  </div>
+<a href="https://github.com/caffo/org-minmal-html-theme" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: fixed; top: 0; border: 0; left: 0; transform: scale(-1, 1);"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></a>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgheadline118">1. JapanTrip</a>
+<ul>
+<li><a href="#orgheadline9">1.1. Itinerary</a>
+<ul>
+<li><a href="#orgheadline1">1.1.1. Sunday 01/10 - shibuya (arriving)</a></li>
+<li><a href="#orgheadline2">1.1.2. Monday 01/11 - akihabara</a></li>
+<li><a href="#orgheadline3">1.1.3. Tuesday 01/12 - ginza</a></li>
+<li><a href="#orgheadline4">1.1.4. Wednesday 01/13 - kyoto</a></li>
+<li><a href="#orgheadline5">1.1.5. Thursday 01/14 - kyoto</a></li>
+<li><a href="#orgheadline6">1.1.6. Friday 01/15 - ghibli</a></li>
+<li><a href="#orgheadline7">1.1.7. Saturday 01/16 - kamakura (optional)</a></li>
+<li><a href="#orgheadline8">1.1.8. Sunday 01/17 (flying back)</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline86">1.2. Places To Go</a>
+<ul>
+<li><a href="#orgheadline20">1.2.1. Shinjuku</a></li>
+<li><a href="#orgheadline34">1.2.2. Akihabara</a></li>
+<li><a href="#orgheadline37">1.2.3. Mitaka</a></li>
+<li><a href="#orgheadline39">1.2.4. Nakano</a></li>
+<li><a href="#orgheadline46">1.2.5. Ginza</a></li>
+<li><a href="#orgheadline60">1.2.6. Kyoto</a></li>
+<li><a href="#orgheadline65">1.2.7. Kamakura</a></li>
+<li><a href="#orgheadline80">1.2.8. Shibuya</a></li>
+<li><a href="#orgheadline85">1.2.9. Harajuku</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline94">1.3. Smaller lists</a>
+<ul>
+<li><a href="#orgheadline93">1.3.1. Tsukiji Restaurants</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline95">1.4. Bonus Places</a></li>
+<li><a href="#orgheadline96">1.5. Ghibli Movies to Rewatch <code>[3/5]</code></a></li>
+<li><a href="#orgheadline109">1.6. Packing list (Clothes)</a>
+<ul>
+<li><a href="#orgheadline97">1.6.1. <span class="done nilDONE">DONE</span> ExOfficio Boxer Brief (4+1)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="airplane">airplane</span></span></a></li>
+<li><a href="#orgheadline98">1.6.2. <span class="done nilDONE">DONE</span> Uniqlo Heattech Ankle Socks (4+1)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="airplane">airplane</span></span></a></li>
+<li><a href="#orgheadline99">1.6.3. <span class="done nilDONE">DONE</span> Uniqlo Heattech Extra Warm T-Shirt (Long Sleeve) (2)</a></li>
+<li><a href="#orgheadline100">1.6.4. <span class="done nilDONE">DONE</span> Favorite tees (2)</a></li>
+<li><a href="#orgheadline101">1.6.5. <span class="done nilDONE">DONE</span> Uniqlo Warm Lined Stretch Pants (2)</a></li>
+<li><a href="#orgheadline102">1.6.6. <span class="done nilDONE">DONE</span> Uniqlo Seamless Down Jacket</a></li>
+<li><a href="#orgheadline103">1.6.7. <span class="done nilDONE">DONE</span> Uniqlo Cashemere Cardigan</a></li>
+<li><a href="#orgheadline104">1.6.8. <span class="todo nilTODO">TODO</span> Uniqlo Comfort Jacket&#xa0;&#xa0;&#xa0;<span class="tag"><span class="airplane">airplane</span></span></a></li>
+<li><a href="#orgheadline105">1.6.9. <span class="todo nilTODO">TODO</span> Uniqlo Jogger Pants&#xa0;&#xa0;&#xa0;<span class="tag"><span class="airplane">airplane</span></span></a></li>
+<li><a href="#orgheadline106">1.6.10. <span class="todo nilTODO">TODO</span> ExOfficio Lodestone Plaid Shirt&#xa0;&#xa0;&#xa0;<span class="tag"><span class="airplane">airplane</span></span></a></li>
+<li><a href="#orgheadline107">1.6.11. <span class="todo nilTODO">TODO</span> Uniqlo Airism V-Neck Tee&#xa0;&#xa0;&#xa0;<span class="tag"><span class="airplane">airplane</span></span></a></li>
+<li><a href="#orgheadline108">1.6.12. <span class="todo nilTODO">TODO</span> Belt</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline117">1.7. Tasks</a>
+<ul>
+<li><a href="#orgheadline110">1.7.1. <span class="todo nilTODO">TODO</span> Make reservation at the owl cafe</a></li>
+<li><a href="#orgheadline111">1.7.2. <span class="done nilDONE">DONE</span> Make reservation for maid cafe</a></li>
+<li><a href="#orgheadline112">1.7.3. <span class="done nilDONE">DONE</span> Make reservation for robot restaurant</a></li>
+<li><a href="#orgheadline113">1.7.4. <span class="todo nilTODO">TODO</span> Make reservation for Coffee Ten Iruyaka</a></li>
+<li><a href="#orgheadline114">1.7.5. <span class="todo nilTODO">TODO</span> Make reservation for the Yukata place</a></li>
+<li><a href="#orgheadline115">1.7.6. <span class="done nilDONE">DONE</span> Make reservation at Ginza Enji</a></li>
+<li><a href="#orgheadline116">1.7.7. <span class="todo nilTODO">TODO</span> Pick shoes to use</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgheadline118" class="outline-2">
+<h2 id="orgheadline118"><span class="section-number-2">1</span> JapanTrip</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgheadline9" class="outline-3">
+<h3 id="orgheadline9"><span class="section-number-3">1.1</span> Itinerary</h3>
+<div class="outline-text-3" id="text-1-1">
+</div><div id="outline-container-orgheadline1" class="outline-4">
+<h4 id="orgheadline1"><span class="section-number-4">1.1.1</span> Sunday 01/10 - shibuya (arriving)</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<ul class="org-ul">
+<li>Locations: Shinjuku, Shibuya, Harajuku</li>
+<li>Maps: <a href="https://www.google.com.br/maps/@35.6941102,139.7012114,16z/data=!3m1!4b1!4m2!6m1!1szUnxs68_OPr0.kb48TG5826m0?hl=en">Shinjuku</a>, <a href="https://www.google.com.br/maps/@35/.6644135,139.683853,14z/data=!3m1!4b1!4m2!6m1!1szUnxs68_OPr0.kSMphhtNAWtw?hl=en">Shibuya</a>, <a href="https://www.google.com.br/maps/@35/.6644135,139.683853,14z/data=!3m1!4b1!4m2!6m1!1szUnxs68_OPr0.kSMphhtNAWtw?hl=en">Harajuku</a></li>
+<li>Themes: Arriving</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline2" class="outline-4">
+<h4 id="orgheadline2"><span class="section-number-4">1.1.2</span> Monday 01/11 - akihabara</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<ul class="org-ul">
+<li>Locations: Akihabara, Shinjuku</li>
+<li>Maps: <a href="https://www.google.com.br/maps/@35.7000362,139.7692389,17z/data=!3m1!4b1!4m2!6m1!1szUnxs68_OPr0.k8cNkPIyaWik?hl=en">Akihabara</a>, <a href="https://www.google.com.br/maps/@35.6985053,139.7573177,14z/data=!3m1!4b1!4m2!6m1!1szQEh-Y1nd3tM.kaTHPpfLkoZg?hl=en">Akiba Keyboards</a>, <a href="https://www.google.com.br/maps/@35.6941102,139.7012114,16z/data=!3m1!4b1!4m2!6m1!1szUnxs68_OPr0.kb48TG5826m0?hl=en">Shinjuku</a></li>
+<li>Themes: Akiba, <a href="http://www.shinjuku-robot.com/pc/">Robot Restaurant</a>, <a href="https://en.wikipedia.org/wiki/Shinjuku_Golden_Gai">Golden Gai</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline3" class="outline-4">
+<h4 id="orgheadline3"><span class="section-number-4">1.1.3</span> Tuesday 01/12 - ginza</h4>
+<div class="outline-text-4" id="text-1-1-3">
+<ul class="org-ul">
+<li>Locations: Ginza, Jindaiji, Asakusa</li>
+<li>Maps: <a href="https://www.google.com.br/maps/@35.6692207,139.7625023,16z/data=!3m1!4b1!4m2!6m1!1szUnxs68_OPr0.k11Xa5BzJue8?hl=en">Ginza</a></li>
+<li>Themes: Tsukiji Fish Market</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline4" class="outline-4">
+<h4 id="orgheadline4"><span class="section-number-4">1.1.4</span> Wednesday 01/13 - kyoto</h4>
+<div class="outline-text-4" id="text-1-1-4">
+<ul class="org-ul">
+<li>Locations: Kyoto</li>
+<li>Maps: <a href="https://www.google.com.br/maps/@34.9894411,135.7187662,11z/data=!3m1!4b1!4m2!6m1!1szUnxs68_OPr0.kguBIM3l8kzY?hl=en">Kyoto</a></li>
+<li>Themes:</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline5" class="outline-4">
+<h4 id="orgheadline5"><span class="section-number-4">1.1.5</span> Thursday 01/14 - kyoto</h4>
+<div class="outline-text-4" id="text-1-1-5">
+<ul class="org-ul">
+<li>Locations: Kyoto</li>
+<li>Maps: <a href="https://www.google.com.br/maps/@34.9894411,135.7187662,11z/data=!3m1!4b1!4m2!6m1!1szUnxs68_OPr0.kguBIM3l8kzY?hl=en">Kyoto</a></li>
+<li>Themes:</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline6" class="outline-4">
+<h4 id="orgheadline6"><span class="section-number-4">1.1.6</span> Friday 01/15 - ghibli</h4>
+<div class="outline-text-4" id="text-1-1-6">
+<ul class="org-ul">
+<li>Locations: Mitaka, Nanako</li>
+<li>Maps: <a href="https://www.google.com.br/maps/@35/.6644135,139.683853,14z/data=!3m1!4b1!4m2!6m1!1szUnxs68_OPr0.kSMphhtNAWtw?hl=en">Mitaka</a>, <a href="https://www.google.com.br/maps/@35/.6644135,139.683853,14z/data=!3m1!4b1!4m2!6m1!1szUnxs68_OPr0.kSMphhtNAWtw?hl=en">Nakano</a></li>
+<li>Themes: Ghibli Museum, Nakano Broadway</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline7" class="outline-4">
+<h4 id="orgheadline7"><span class="section-number-4">1.1.7</span> Saturday 01/16 - kamakura (optional)</h4>
+<div class="outline-text-4" id="text-1-1-7">
+<ul class="org-ul">
+<li>Locations: Kamakura, Yokohama</li>
+<li>Maps: <a href="https://www.google.com/maps/d/u/0/edit?hl=en&amp;authuser=0&amp;mid=zUnxs68_OPr0.kPg2bBs9uJf4">Kamakura</a></li>
+<li>Themes: Last Day</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline8" class="outline-4">
+<h4 id="orgheadline8"><span class="section-number-4">1.1.8</span> Sunday 01/17 (flying back)</h4>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgheadline86" class="outline-3">
+<h3 id="orgheadline86"><span class="section-number-3">1.2</span> Places To Go</h3>
+<div class="outline-text-3" id="text-1-2">
+</div><div id="outline-container-orgheadline20" class="outline-4">
+<h4 id="orgheadline20"><span class="section-number-4">1.2.1</span> Shinjuku</h4>
+<div class="outline-text-4" id="text-1-2-1">
+</div><ol class="org-ol"><li><a id="orgheadline10"></a><a href="http://www.timeout.com/tokyo/museums/hanazono-jinja">Hanazono Jinja</a><br  /><div class="outline-text-5" id="text-1-2-1-1">
+<p>
+Nice temple in shinjuku
+</p>
+</div></li>
+<li><a id="orgheadline11"></a><a href="http://www.timeout.com/tokyo/restaurants/die-katze#tab_panel_2">Die Katze Neko Cafe</a><br  /><div class="outline-text-5" id="text-1-2-1-2">
+<p>
+Very good neko cafe in shinjuku. Famous but not packed.
+</p>
+</div></li>
+<li><a id="orgheadline12"></a><a href="http://www.donki.com/en/store/shop_detail.php?shop_id=8">Don Quijote Shinjuku</a><br  /><div class="outline-text-5" id="text-1-2-1-3">
+<p>
+Huge convenience store in japan (aka kombini)
+</p>
+</div></li>
+<li><a id="orgheadline13"></a><a href="http://www.biccamera.co.jp.e.lj.hp.transer.com/shoplist/shop-016.html">Bic Camera Shinjuku</a><br  /><div class="outline-text-5" id="text-1-2-1-4">
+<p>
+Huge electronics store. Must see. Make sure you don't buy everything in the first day there and make a discount card "KADO" to get discounts the second time you go there.
+</p>
+</div></li>
+<li><a id="orgheadline14"></a><a href="http://www.timeout.com/tokyo/bars-and-pubs/8bit-cafe#tab_panel_2">8 Bit Cafe</a><br  /><div class="outline-text-5" id="text-1-2-1-5">
+<p>
+Good food and retro videogames in a cozy cafe. Recommended.
+</p>
+</div></li>
+<li><a id="orgheadline15"></a><a href="http://www.shinjuku-robot.com/pc/">Robot Restaurant</a><br  /><div class="outline-text-5" id="text-1-2-1-6">
+<p>
+Crazy show with robots, mechas and girls
+</p>
+</div></li>
+<li><a id="orgheadline16"></a><a href="http://www.timeout.com/tokyo/bars-and-pubs/suntory-lounge-eagle">Suntory Lounge Eagle</a><br  /><div class="outline-text-5" id="text-1-2-1-7">
+<p>
+Good cocktails place for late night drinks. At the bottom of a staircase, chandelier-lit bar.
+</p>
+</div></li>
+<li><a id="orgheadline17"></a><a href="http://www.timeout.com/tokyo/lgbt/cocolo-cafe">CoCoLo Cafe</a><br  /><div class="outline-text-5" id="text-1-2-1-8">
+<p>
+Hype and good cafe for after night coffee. Seems to attract a weird but fun crowd.
+</p>
+</div></li>
+<li><a id="orgheadline18"></a><a href="https://www.google.com/maps/place/golden+gai/@35.6940446,139.7047224,15z/data=!4m2!3m1!1s0x0:0x71a5c0e1150c1a8f?sa=X&amp;ved=0ahUKEwiKmLi4z4nKAhXHj5AKHZEDBt4Q_BIIhgEwDg">Golden Gai</a><br  /><div class="outline-text-5" id="text-1-2-1-9">
+<p>
+Awesome network of small bars
+</p>
+</div></li>
+<li><a id="orgheadline19"></a><a href="https://www.google.com/maps?cid=4141491719837936982">ICHIRAN Shinjuku</a><br  /><div class="outline-text-5" id="text-1-2-1-10">
+<p>
+Best ramen in shinjuku. good for breakfast.
+</p>
+</div></li></ol>
+</div>
+
+<div id="outline-container-orgheadline34" class="outline-4">
+<h4 id="orgheadline34"><span class="section-number-4">1.2.2</span> Akihabara</h4>
+<div class="outline-text-4" id="text-1-2-2">
+</div><ol class="org-ol"><li><a id="orgheadline21"></a><a href="http://www.lonelyplanet.com/japan/tokyo/activities/sports-games/super-potato-retro-kan">Super Potato Retro-kan</a><br  /><div class="outline-text-5" id="text-1-2-2-1">
+<p>
+Retro gaming store in Akiba. Nerd Mecca.
+</p>
+</div></li>
+<li><a id="orgheadline22"></a><a href="https://www.google.com/maps?cid=8915183078415758198">Yodobashi Camera Akihabara</a><br  /><div class="outline-text-5" id="text-1-2-2-2">
+<p>
+Huge electronics store
+</p>
+</div></li>
+<li><a id="orgheadline23"></a><a href="https://maps.google.com/?cid=4230016992904636542">Kanda Myoujin</a><br  /><div class="outline-text-5" id="text-1-2-2-3">
+<p>
+Electronic blessing temple/shrine
+</p>
+</div></li>
+<li><a id="orgheadline24"></a><a href="https://www.google.com/maps?cid=4445699925429292090">Maidreamin</a><br  /><div class="outline-text-5" id="text-1-2-2-4">
+<p>
+Maido cafe
+</p>
+</div></li>
+<li><a id="orgheadline25"></a><a href="https://www.google.com/maps?cid=14455105210599538526">Moesham</a><br  /><div class="outline-text-5" id="text-1-2-2-5">
+<p>
+Maid hair saloon.
+</p>
+</div></li>
+<li><a id="orgheadline26"></a><a href="https://www.google.com/maps/place/%E3%82%AB%E3%83%95%E3%82%A7%EF%BC%86%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3+Cos-Cha/@35.7023772,139.7682357,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xf2f50df2a1701c0b">Cos-cha Maido Cafe</a><br  /><div class="outline-text-5" id="text-1-2-2-6">
+<p>
+Well recommended maido cafe
+</p>
+</div></li>
+<li><a id="orgheadline27"></a><a href="https://www.google.com/maps?cid=10111561495947615187">Mandarake</a><br  /><div class="outline-text-5" id="text-1-2-2-7">
+<p>
+Anime / Manga / Game store
+</p>
+</div></li>
+<li><a id="orgheadline28"></a>A<a href="https://www.google.com/maps?cid=10553894423225248039">NIMATE</a><br  /><div class="outline-text-5" id="text-1-2-2-8">
+<p>
+Famous Anime / Manga / Game store
+</p>
+</div></li>
+<li><a id="orgheadline29"></a><a href="https://www.google.com/maps/d/u/0/edit?hl=en&amp;authuser=0&amp;mid=zUnxs68_OPr0.k8cNkPIyaWik">M's Sex Shop</a><br  /><div class="outline-text-5" id="text-1-2-2-9">
+<p>
+6 floor adult entretaiment
+</p>
+</div></li>
+<li><a id="orgheadline30"></a><a href="https://maps.google.com/?cid=4051562248000588420">Tsukomo Keyboards</a><br  /><div class="outline-text-5" id="text-1-2-2-10">
+<p>
+Mechanical Keyboards
+</p>
+</div></li>
+<li><a id="orgheadline31"></a><a href="https://maps.google.com/?cid=3085159976904145672">DOSPARA Keyboards</a><br  /><div class="outline-text-5" id="text-1-2-2-11">
+<p>
+Mechanical Keyboards
+</p>
+</div></li>
+<li><a id="orgheadline32"></a><a href="https://maps.google.com/?cid=5729859357085168736">SOFTMAP Keyboards （株）ソフマップ 秋葉原</a><br  /><div class="outline-text-5" id="text-1-2-2-12">
+<p>
+Another awesome keyboard store
+</p>
+</div></li>
+<li><a id="orgheadline33"></a><a href="https://www.google.com.br/maps/@35.6984731,139.7573177,14z/data=!3m1!4b1!4m2!6m1!1szQEh-Y1nd3tM.kaTHPpfLkoZg?hl=en">Reddit's Keyboard Map</a><br  /><div class="outline-text-5" id="text-1-2-2-13">
+<p>
+Custom google map by redditors with good keyboard locations
+</p>
+</div></li></ol>
+</div>
+
+<div id="outline-container-orgheadline37" class="outline-4">
+<h4 id="orgheadline37"><span class="section-number-4">1.2.3</span> Mitaka</h4>
+<div class="outline-text-4" id="text-1-2-3">
+</div><ol class="org-ol"><li><a id="orgheadline35"></a><a href="https://www.google.com/maps?cid=5611860688709652997">Ghibli Museum</a><br  /><div class="outline-text-5" id="text-1-2-3-1">
+<p>
+Lovely Ghibli Museum
+</p>
+</div></li>
+<li><a id="orgheadline36"></a><a href="https://www.google.com/maps?cid=47257635823309870">Coffee Ten Irukaya</a><br  /><div class="outline-text-5" id="text-1-2-3-2">
+<p>
+Uberfancy coffee shop - barista master
+</p>
+</div></li></ol>
+</div>
+<div id="outline-container-orgheadline39" class="outline-4">
+<h4 id="orgheadline39"><span class="section-number-4">1.2.4</span> Nakano</h4>
+<div class="outline-text-4" id="text-1-2-4">
+</div><ol class="org-ol"><li><a id="orgheadline38"></a><a href="https://www.google.com/maps/place/Nakano+Broadway/@35.7091706,139.6660908,15z/data=!4m2!3m1!1s0x0:0xde4d7033fbb0e5ed">Nakano Broadway</a><br  /><div class="outline-text-5" id="text-1-2-4-1">
+<p>
+Another Nerd Mecca
+</p>
+</div></li></ol>
+</div>
+<div id="outline-container-orgheadline46" class="outline-4">
+<h4 id="orgheadline46"><span class="section-number-4">1.2.5</span> Ginza</h4>
+<div class="outline-text-4" id="text-1-2-5">
+</div><ol class="org-ol"><li><a id="orgheadline40"></a><a href="https://www.google.com/maps/place/Nakano+Broadway/@35.7091706,139.6660908,15z/data=!4m2!3m1!1s0x0:0xde4d7033fbb0e5ed">Ginza Eiji</a> (good for lunch)<br  /><div class="outline-text-5" id="text-1-2-5-1">
+<p>
+Best smoked restaurant ever
+</p>
+</div></li>
+<li><a id="orgheadline41"></a><a href="https://www.google.com/maps?cid=6325845380007391103">Tsukiji Fish Market</a> (be there @ 5am-ish)<br  /><div class="outline-text-5" id="text-1-2-5-2">
+<p>
+Very good and fresh sushi
+</p>
+</div></li>
+<li><a id="orgheadline42"></a><a href="https://www.google.com/maps/place/2+Chome-7-15+Ginza,+Ch%C5%AB%C5%8D-ku,+T%C5%8Dky%C5%8D-to+104-0061,+Japan/@35.6729418,139.7656368,17z/data=!3m1!4b1!4m2!3m1!1s0x60188be403f25e65:0xbca8b97711e85d20">Stationary Store</a><br  /><div class="outline-text-5" id="text-1-2-5-3">
+<p>
+One of the best stationary store in ginza
+</p>
+</div></li>
+<li><a id="orgheadline43"></a><a href="https://www.google.com/maps/place/Bulgari+Tokyo+Restaurant/@35.6729307,139.7651174,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x97971e2ba371ff52">Bulgari Cafe</a><br  /><div class="outline-text-5" id="text-1-2-5-4">
+<p>
+Fancy coffee shop / restaurant
+</p>
+</div></li>
+<li><a id="orgheadline44"></a><a href="https://www.google.com/maps/place/%E6%9C%A8%E6%9D%91%E5%B1%8B%E7%B8%BD%E6%9C%AC%E5%BA%97/@35.6717557,139.7629786,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x7d338de46fba815d">Kimuraya Bakery</a><br  /><div class="outline-text-5" id="text-1-2-5-5">
+<p>
+Good bakery / pan factory
+</p>
+</div></li>
+<li><a id="orgheadline45"></a><a href="https://www.google.com/maps/place/Cafe+de+l'ambre/@35.6679255,139.7601761,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x2ba50e8c8c54781f">Cafe de l'ambre</a><br  /><div class="outline-text-5" id="text-1-2-5-6">
+<p>
+Fancy coffee shop — coffee only
+</p>
+</div></li></ol>
+</div>
+
+<div id="outline-container-orgheadline60" class="outline-4">
+<h4 id="orgheadline60"><span class="section-number-4">1.2.6</span> Kyoto</h4>
+<div class="outline-text-4" id="text-1-2-6">
+</div><ol class="org-ol"><li><a id="orgheadline47"></a><a href="https://www.google.com/maps/place/Hotel+Mume/@35.006219,135.7747453,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xf103f2fa9e133468">Hotel Mume (ryokan)</a><br  /><div class="outline-text-5" id="text-1-2-6-1">
+<p>
+Our ryokan
+</p>
+</div></li>
+<li><a id="orgheadline48"></a><a href="https://www.google.com/maps/place/HAMBURG+LABO/@35.0033449,135.7530624,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x79f8b7e610964428">Hamburg Labo</a><br  /><div class="outline-text-5" id="text-1-2-6-2">
+<p>
+Recommended as the best hamburger ever
+</p>
+</div></li>
+<li><a id="orgheadline49"></a><a href="https://www.google.com/maps?cid=6574912023216025671">Yoshuji</a><br  /><div class="outline-text-5" id="text-1-2-6-3">
+<p>
+Buddhist vegan restaurant
+</p>
+</div></li>
+<li><a id="orgheadline50"></a><a href="https://www.google.com/maps?cid=17446613428721746764">Kyoto Manga Museum</a><br  /><div class="outline-text-5" id="text-1-2-6-4">
+<p>
+Seems to be fun.
+</p>
+</div></li>
+<li><a id="orgheadline51"></a><a href="https://www.google.com/maps/place/%EF%BC%B3%EF%BD%85%EF%BD%8E%EF%BD%94%EF%BD%89%EF%BD%84%EF%BD%8F/@35.0101781,135.7587135,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x3a8e3ef3dbb3cb39">Sentido Coffee Shop</a><br  /><div class="outline-text-5" id="text-1-2-6-5">
+<p>
+Nice 3rd Wave Coffee Shop
+</p>
+</div></li>
+<li><a id="orgheadline52"></a><a href="https://www.google.com/maps?cid=12012634580492956246">Nishiki Market</a><br  /><div class="outline-text-5" id="text-1-2-6-6">
+<p>
+Kyoto's traditional market
+</p>
+</div></li>
+<li><a id="orgheadline53"></a><a href="https://maps.google.com/?cid=4979476773153130317">Tea Ceremony En</a><br  /><div class="outline-text-5" id="text-1-2-6-7">
+<p>
+Recommended as a nice tea ceremony place
+</p>
+</div></li>
+<li><a id="orgheadline54"></a><a href="https://www.google.com/maps/place/Shigetsu+Hirakawa,+J%C5%8Dy%C5%8D-shi,+Ky%C5%8Dto-fu+610-0101,+Japan/@34.8647496,135.7703653,17z/data=!3m1!4b1!4m2!3m1!1s0x600110eb10ca229b:0x1faeac1020c898c3">Anyo-ji Temple</a><br  /><div class="outline-text-5" id="text-1-2-6-8">
+<p>
+Don't remember why is that on the list. Seems to be a nice temple.
+</p>
+</div></li>
+<li><a id="orgheadline55"></a><a href="https://www.google.com/maps?cid=10424437775264723276">Ogawa Coffee Roaster and Shop</a><br  /><div class="outline-text-5" id="text-1-2-6-9">
+<p>
+Well recommended coffee shop
+</p>
+</div></li>
+<li><a id="orgheadline56"></a>2 - <a href="https://www.google.com/maps?cid=11280516514944105991">Monkey Park</a><br  /><div class="outline-text-5" id="text-1-2-6-10">
+<p>
+Weird Park with mokeys all around
+</p>
+</div></li>
+<li><a id="orgheadline57"></a><a href="https://www.google.com/maps?cid=12369934962818482508">Arashiyama Bamboo Groove</a><br  /><div class="outline-text-5" id="text-1-2-6-11">
+<p>
+Bamboo forest
+</p>
+</div></li>
+<li><a id="orgheadline58"></a><a href="https://www.google.com/maps/place/Otagi+Nenbutsu-ji/@35.0313495,135.6589424,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x57b7af11417a95d2">Otago Nenbutsu-ji</a><br  /><div class="outline-text-5" id="text-1-2-6-12">
+<p>
+A not well known temple with 1200 stone sculptures of buddha's disciples in different poses. Special place.
+</p>
+</div></li>
+<li><a id="orgheadline59"></a><a href="https://www.google.com/maps/place/%E9%A2%A8%E9%A2%A8%E3%81%AE%E6%B9%AF/@35.0117,135.6777473,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x51f4b2e69c2b81bf">Hote Spa</a><br  /><div class="outline-text-5" id="text-1-2-6-13">
+<p>
+One of the best SPAs in Kyoto. Good for the end of the day
+</p>
+</div></li></ol>
+</div>
+<div id="outline-container-orgheadline65" class="outline-4">
+<h4 id="orgheadline65"><span class="section-number-4">1.2.7</span> Kamakura</h4>
+<div class="outline-text-4" id="text-1-2-7">
+</div><ol class="org-ol"><li><a id="orgheadline61"></a><a href="https://www.google.com/maps?cid=2216777826481991500">Kamakura Giant Buddha</a><br  /><div class="outline-text-5" id="text-1-2-7-1">
+<p>
+The reason why people go to kamakura
+</p>
+</div></li>
+<li><a id="orgheadline62"></a><a href="https://www.google.com/maps?cid=12134858005477865141">Tsurugaoka Hachimangu Shrine</a><br  /><div class="outline-text-5" id="text-1-2-7-2">
+<p>
+Beautiful temple
+</p>
+</div></li>
+<li><a id="orgheadline63"></a><a href="https://www.google.com/maps?q=Kamakurayama,+Kamakura,+Kanagawa+Prefecture+248-0031,+Japan&amp;ftid=0x60184f7aa88acd6b:0x9f9ff88c11da640b">Kamakurayama</a><br  /><div class="outline-text-5" id="text-1-2-7-3">
+<p>
+Best roast beef in japan
+</p>
+</div></li>
+<li><a id="orgheadline64"></a><a href="https://maps.google.com/?cid=12003280180966990724">Itsuki Garden</a><br  /><div class="outline-text-5" id="text-1-2-7-4">
+<p>
+"Castle in the Sky" themed cafe
+</p>
+</div></li></ol>
+</div>
+
+<div id="outline-container-orgheadline80" class="outline-4">
+<h4 id="orgheadline80"><span class="section-number-4">1.2.8</span> Shibuya</h4>
+<div class="outline-text-4" id="text-1-2-8">
+</div><ol class="org-ol"><li><a id="orgheadline66"></a><a href="https://maps.google.com/?cid=4770425923036695153">Paddlers Coffee</a><br  /><div class="outline-text-5" id="text-1-2-8-1">
+<p>
+Very good 3rd wave coffee shop
+</p>
+</div></li>
+<li><a id="orgheadline67"></a><a href="https://www.google.com/maps/place/11-6+Udagawach%C5%8D,+Shibuya-ku,+T%C5%8Dky%C5%8D-to+150-0042,+Japan/@35.6623298,139.6952486,17z/data=!3m1!4b1!4m2!3m1!1s0x60188ca947981d95:0xe918d26694ba39d3">Butlerscafe</a><br  /><div class="outline-text-5" id="text-1-2-8-2">
+<p>
+Butlers cafe. Not very good reviews
+</p>
+</div></li>
+<li><a id="orgheadline68"></a><a href="https://www.google.com/maps?cid=150846235021963194">Hachiko</a><br  /><div class="outline-text-5" id="text-1-2-8-3">
+<p>
+Hachiko statue
+</p>
+</div></li>
+<li><a id="orgheadline69"></a><a href="https://www.google.com/maps?q=1+Chome-25-10+Shibuya,+Shibuya-ku,+T%C5%8Dky%C5%8D-to+150-0002,+Japan&amp;ftid=0x60188b5800e45477:0x522dad198c7757b8">Nobei Yokocho</a><br  /><div class="outline-text-5" id="text-1-2-8-4">
+<p>
+Small street with lots of restaurants
+</p>
+</div></li>
+<li><a id="orgheadline70"></a><a href="https://maps.google.com/?cid=7209638162284362190">Miyamasu Mitake Shrine</a><br  /><div class="outline-text-5" id="text-1-2-8-5">
+<p>
+Wolf's Shrine
+</p>
+</div></li>
+<li><a id="orgheadline71"></a><a href="https://maps.google.com/?cid=16693239078451614772">Ivorish</a><br  /><div class="outline-text-5" id="text-1-2-8-6">
+<p>
+Best pancakes in Shibuya
+</p>
+</div></li>
+<li><a id="orgheadline72"></a><a href="https://www.google.com/maps?q=41-26+Udagawach%C5%8D,+Shibuya-ku,+T%C5%8Dky%C5%8D-to+150-0042,+Japan&amp;ftid=0x60188cac12031a2d:0xf6162f08c8c1eb7e">Katsudonya Zuicho</a><br  /><div class="outline-text-5" id="text-1-2-8-7">
+<p>
+Well recommended tonkatsu place. Only dish
+</p>
+</div></li>
+<li><a id="orgheadline73"></a><a href="https://www.google.com/maps?cid=17443237424210621547">Nagi Shokudo</a><br  /><div class="outline-text-5" id="text-1-2-8-8">
+<p>
+Awesome veggie restaurant. Go there after or before Tasudonya Zuicho
+</p>
+</div></li>
+<li><a id="orgheadline74"></a><a href="https://www.google.com/maps?cid=10658983123545051552">Narukiyo</a><br  /><div class="outline-text-5" id="text-1-2-8-9">
+<p>
+Good Izakaya
+</p>
+</div></li>
+<li><a id="orgheadline75"></a><a href="https://www.google.com/maps?cid=14502424858922825908">Loft - Stationary</a><br  /><div class="outline-text-5" id="text-1-2-8-10">
+<p>
+Very good stationary and hobonichi store
+</p>
+</div></li>
+<li><a id="orgheadline76"></a><a href="https://maps.google.com/?cid=16520014791782084989">Streamer Coffee</a><br  /><div class="outline-text-5" id="text-1-2-8-11">
+<p>
+Best espresso in Shibuya. Ask for a ristretto
+</p>
+</div></li>
+<li><a id="orgheadline77"></a><a href="https://www.google.com/maps?cid=17164645774726874279">Fuglen Tokyo</a><br  /><div class="outline-text-5" id="text-1-2-8-12">
+<p>
+Nice coffee shop in Shibuya. Umbrella place.
+</p>
+</div></li>
+<li><a id="orgheadline78"></a><a href="https://www.google.com/maps?cid=10446396990428360100">Suzume No Oyado</a><br  /><div class="outline-text-5" id="text-1-2-8-13">
+<p>
+Very nice okonomiyaki restaurant
+</p>
+</div></li>
+<li><a id="orgheadline79"></a><a href="https://www.google.com/maps?cid=8028974077752341026">Murugi Curry</a><br  /><div class="outline-text-5" id="text-1-2-8-14">
+<p>
+Recommended curry place
+</p>
+</div></li></ol>
+</div>
+<div id="outline-container-orgheadline85" class="outline-4">
+<h4 id="orgheadline85"><span class="section-number-4">1.2.9</span> Harajuku</h4>
+<div class="outline-text-4" id="text-1-2-9">
+</div><ol class="org-ol"><li><a id="orgheadline81"></a><a href="https://maps.google.com/?cid=17953585344328329729">Daiso Harajuku</a><br  /><div class="outline-text-5" id="text-1-2-9-1">
+<p>
+One dollar store
+</p>
+</div></li>
+<li><a id="orgheadline82"></a><a href="https://maps.google.com/?q=4+Chome-6-2+Jing%C5%ABmae,+Shibuya-ku,+T%C5%8Dky%C5%8D-to+150-0001,+Japan&amp;ftid=0x60188c9f44470dd5:0xe4ff44a1c85debbe">Gyoza Lou</a><br  /><div class="outline-text-5" id="text-1-2-9-2">
+<p>
+Best dumpling and gyoza place in Harajuku
+</p>
+</div></li>
+<li><a id="orgheadline83"></a><a href="https://www.google.com/maps/place/5+Chome-11+Jing%C5%ABmae,+Shibuya-ku,+T%C5%8Dky%C5%8D-to+150-0001,+Japan/@35.6667354,139.7042513,17z/data=!3m1!4b1!4m2!3m1!1s0x60188ca40076916d:0xc4a0ac55aaab4d8f">Daihachi Takohanamaru</a><br  /><div class="outline-text-5" id="text-1-2-9-3">
+<p>
+Best takoyaki
+</p>
+</div></li>
+<li><a id="orgheadline84"></a><a href="https://maps.google.com/?cid=16971757205139612550">Stationary Cafe</a><br  /><div class="outline-text-5" id="text-1-2-9-4">
+<p>
+Stationary love
+</p>
+</div></li></ol>
+</div>
+</div>
+<div id="outline-container-orgheadline94" class="outline-3">
+<h3 id="orgheadline94"><span class="section-number-3">1.3</span> Smaller lists</h3>
+<div class="outline-text-3" id="text-1-3">
+</div><div id="outline-container-orgheadline93" class="outline-4">
+<h4 id="orgheadline93"><span class="section-number-4">1.3.1</span> Tsukiji Restaurants</h4>
+<div class="outline-text-4" id="text-1-3-1">
+</div><ol class="org-ol"><li><a id="orgheadline87"></a><a href="http://www.yelp.com/biz/%E5%AF%BF%E5%8F%B8%E5%A4%A7-%E4%B8%AD%E5%A4%AE%E5%8C%BA">Sushi Dai</a><br  /><div class="outline-text-5" id="text-1-3-1-1">
+<p>
+Most famous sushi place in the fish market
+</p>
+</div></li>
+<li><a id="orgheadline88"></a><a href="http://www.yelp.com/biz/%E5%A4%A7%E5%92%8C%E5%AF%BF%E5%8F%B8-%E4%B8%AD%E5%A4%AE%E5%8C%BA">Sushi Dawa</a><br  /><div class="outline-text-5" id="text-1-3-1-2">
+<p>
+Second most famous sushi. Smaller lines, sounds like the best option
+</p>
+</div></li>
+<li><a id="orgheadline89"></a><a href="http://www.iwasasushi.com/en/">Iwasa Sushi</a><br  /><div class="outline-text-5" id="text-1-3-1-3">
+<p>
+Recommended by Jeff Bezos
+</p>
+</div></li>
+<li><a id="orgheadline90"></a><a href="http://www.yonemoto-coffee.com/">Yonemoto Coffee</a><br  /><div class="outline-text-5" id="text-1-3-1-4">
+<p>
+Good coffee @ Tsukiji
+</p>
+</div></li>
+<li><a id="orgheadline91"></a><a href="http://www.tripadvisor.com/ShowUserReviews-g1066444-d1683454-r131441020-Okame-Chuo_Tokyo_Tokyo_Prefecture_Kanto.html">Okame</a><br  /><div class="outline-text-5" id="text-1-3-1-5">
+<p>
+Good omasake, recommended by locals
+</p>
+</div></li>
+<li><a id="orgheadline92"></a><a href="http://www.tripadvisor.com/Restaurant_Review-g1066444-d1572402-Reviews-Yamazaki-Chuo_Tokyo_Tokyo_Prefecture_Kanto.html">Yamazaki</a><br  /><div class="outline-text-5" id="text-1-3-1-6">
+<p>
+Another good non-crowded option
+</p>
+</div></li></ol>
+</div>
+</div>
+
+<div id="outline-container-orgheadline95" class="outline-3">
+<h3 id="orgheadline95"><span class="section-number-3">1.4</span> Bonus Places</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>Roppongi Hills</li>
+<li>More time in asakusa</li>
+<li>Odaiba</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline96" class="outline-3">
+<h3 id="orgheadline96"><span class="section-number-3">1.5</span> Ghibli Movies to Rewatch <code>[3/5]</code></h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Princess Mononoke</li>
+<li class="off"><code>[&#xa0;]</code> The Tale of the Princess Kaguya</li>
+<li class="off"><code>[&#xa0;]</code> Kiki Delivery Service</li>
+<li class="on"><code>[X]</code> My Neighbor Totoro</li>
+<li class="on"><code>[X]</code> Castle in the Sky</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgheadline109" class="outline-3">
+<h3 id="orgheadline109"><span class="section-number-3">1.6</span> Packing list (Clothes)</h3>
+<div class="outline-text-3" id="text-1-6">
+</div><div id="outline-container-orgheadline97" class="outline-4">
+<h4 id="orgheadline97"><span class="section-number-4">1.6.1</span> <span class="done DONE">DONE</span> <a href="http://www.amazon.com/ExOfficio-Give-N-Go-Boxer-Brief-Medium/dp/B001M0MN02">ExOfficio Boxer Brief</a> (4+1)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="airplane">airplane</span></span></h4>
+<div class="outline-text-4" id="text-1-6-1">
+</div>
+</div>
+<div id="outline-container-orgheadline98" class="outline-4">
+<h4 id="orgheadline98"><span class="section-number-4">1.6.2</span> <span class="done DONE">DONE</span> <a href="http://www.uniqlo.com/us/product/men-heattech-pile-ankle-socks-2-pairs-159362.html">Uniqlo Heattech Ankle Socks</a> (4+1)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="airplane">airplane</span></span></h4>
+<div class="outline-text-4" id="text-1-6-2">
+</div>
+</div>
+<div id="outline-container-orgheadline99" class="outline-4">
+<h4 id="orgheadline99"><span class="section-number-4">1.6.3</span> <span class="done DONE">DONE</span> <a href="http://www.uniqlo.com/us/product/men-heattech-extra-warm-t-shirt-long-sleeve-146071.html#09">Uniqlo Heattech Extra Warm T-Shirt (Long Sleeve)</a> (2)</h4>
+<div class="outline-text-4" id="text-1-6-3">
+</div>
+</div>
+<div id="outline-container-orgheadline100" class="outline-4">
+<h4 id="orgheadline100"><span class="section-number-4">1.6.4</span> <span class="done DONE">DONE</span> Favorite tees (2)</h4>
+<div class="outline-text-4" id="text-1-6-4">
+</div>
+</div>
+<div id="outline-container-orgheadline101" class="outline-4">
+<h4 id="orgheadline101"><span class="section-number-4">1.6.5</span> <span class="done DONE">DONE</span> <a href="http://www.uniqlo.com/us/product/men-warm-lined-stretch-slim-fit-pants-146146.html#06">Uniqlo Warm Lined Stretch Pants</a> (2)</h4>
+<div class="outline-text-4" id="text-1-6-5">
+</div>
+</div>
+<div id="outline-container-orgheadline102" class="outline-4">
+<h4 id="orgheadline102"><span class="section-number-4">1.6.6</span> <span class="done DONE">DONE</span> <a href="http://www.uniqlo.com/us/product/men-seamless-down-hooded-jacket-156387.html">Uniqlo Seamless Down Jacket</a></h4>
+<div class="outline-text-4" id="text-1-6-6">
+</div>
+</div>
+<div id="outline-container-orgheadline103" class="outline-4">
+<h4 id="orgheadline103"><span class="section-number-4">1.6.7</span> <span class="done DONE">DONE</span> <a href="http://www.uniqlo.com/us/product/men-cotton-cashmere-v-neck-cardigan-163493.html">Uniqlo Cashemere Cardigan</a></h4>
+<div class="outline-text-4" id="text-1-6-7">
+</div>
+</div>
+<div id="outline-container-orgheadline104" class="outline-4">
+<h4 id="orgheadline104"><span class="section-number-4">1.6.8</span> <span class="todo TODO">TODO</span> <a href="http://www.uniqlo.com/us/product/men-comfort-jacket-160129.html#08">Uniqlo Comfort Jacket</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="airplane">airplane</span></span></h4>
+</div>
+<div id="outline-container-orgheadline105" class="outline-4">
+<h4 id="orgheadline105"><span class="section-number-4">1.6.9</span> <span class="todo TODO">TODO</span> <a href="http://www.uniqlo.com/us/product/men-jogger-pants-length-31-inch-176268.html">Uniqlo Jogger Pants</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="airplane">airplane</span></span></h4>
+</div>
+<div id="outline-container-orgheadline106" class="outline-4">
+<h4 id="orgheadline106"><span class="section-number-4">1.6.10</span> <span class="todo TODO">TODO</span> <a href="http://www.amazon.com/gp/product/B00LF1WOZW">ExOfficio Lodestone Plaid Shirt</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="airplane">airplane</span></span></h4>
+</div>
+<div id="outline-container-orgheadline107" class="outline-4">
+<h4 id="orgheadline107"><span class="section-number-4">1.6.11</span> <span class="todo TODO">TODO</span> <a href="http://www.uniqlo.com/us/product/men-airism-v-neck-t-shirt-short-sleeve-162848.html">Uniqlo Airism V-Neck Tee</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="airplane">airplane</span></span></h4>
+</div>
+<div id="outline-container-orgheadline108" class="outline-4">
+<h4 id="orgheadline108"><span class="section-number-4">1.6.12</span> <span class="todo TODO">TODO</span> Belt</h4>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline117" class="outline-3">
+<h3 id="orgheadline117"><span class="section-number-3">1.7</span> Tasks</h3>
+<div class="outline-text-3" id="text-1-7">
+</div><div id="outline-container-orgheadline110" class="outline-4">
+<h4 id="orgheadline110"><span class="section-number-4">1.7.1</span> <span class="todo TODO">TODO</span> Make reservation at the owl cafe</h4>
+</div>
+<div id="outline-container-orgheadline111" class="outline-4">
+<h4 id="orgheadline111"><span class="section-number-4">1.7.2</span> <span class="done DONE">DONE</span> Make reservation for maid cafe</h4>
+<div class="outline-text-4" id="text-1-7-2">
+</div>
+</div>
+<div id="outline-container-orgheadline112" class="outline-4">
+<h4 id="orgheadline112"><span class="section-number-4">1.7.3</span> <span class="done DONE">DONE</span> Make reservation for robot restaurant</h4>
+<div class="outline-text-4" id="text-1-7-3">
+</div>
+</div>
+<div id="outline-container-orgheadline113" class="outline-4">
+<h4 id="orgheadline113"><span class="section-number-4">1.7.4</span> <span class="todo TODO">TODO</span> Make reservation for Coffee Ten Iruyaka</h4>
+</div>
+<div id="outline-container-orgheadline114" class="outline-4">
+<h4 id="orgheadline114"><span class="section-number-4">1.7.5</span> <span class="todo TODO">TODO</span> Make reservation for the Yukata place</h4>
+</div>
+<div id="outline-container-orgheadline115" class="outline-4">
+<h4 id="orgheadline115"><span class="section-number-4">1.7.6</span> <span class="done DONE">DONE</span> Make reservation at Ginza Enji</h4>
+<div class="outline-text-4" id="text-1-7-6">
+</div>
+</div>
+<div id="outline-container-orgheadline116" class="outline-4">
+<h4 id="orgheadline116"><span class="section-number-4">1.7.7</span> <span class="todo TODO">TODO</span> Pick shoes to use</h4>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Rodrigo Franco</p>
+<p class="date">Created: 2016-02-29 Mon 17:35</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+<script src="dist/bundle.min.js"></script>
 </body>
 </html>
