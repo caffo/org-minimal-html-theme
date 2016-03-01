@@ -17,9 +17,10 @@
 @import './paragraph.css';
 @import './postamble.css';
 @import './quote.css';
+@import './selection';
 @import './strike.css';
 @import './table.css';
 
 /* Custom */
-@import './underline.css';
 @import './container.css';
+@import './underline.css';

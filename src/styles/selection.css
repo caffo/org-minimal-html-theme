@@ -1,0 +1,15 @@
+/*
+ ==============================================================================
+ Selection
+ ==============================================================================
+*/
+
+/**
+ * Apply the same configuration from `highlight` to cursor selection.
+ */
+
+::selection {
+  background-color: var(--highlight-bg-hover);
+  color: var(--color);
+  text-shadow: none;
+}
