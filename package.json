@@ -1,15 +1,16 @@
 {
   "private": true,
   "scripts": {
+    "build": "npm run styles && npm run compress",
+    "compress": "npm run compress-styles & npm run compress-scripts",
+    "compress-scripts": "uglifyjs src/scripts/*.js -o dist/bundle.min.js -c -m -v --screw-ie8 --stats",
+    "compress-styles": "cssnano < dist/bundle.css > dist/bundle.min.css",
+    "lint": "stylelint src/styles/*.css && xo src/scripts/*.js --space --env=browser",
+    "server": "browser-sync start --files dist/bundle.css --server --no-notify --no-open",
     "start": "npm run watch & npm run server",
     "styles": "postcss -u postcss-import -u postcss-url -u postcss-cssnext -c options.json -o dist/bundle.css src/styles/index.css",
-    "compress-styles": "cssnano < dist/bundle.css > dist/bundle.min.css",
-    "compress-scripts": "uglifyjs src/scripts/*.js -o dist/bundle.min.js -c -m -v --screw-ie8 --stats",
-    "compress": "npm run compress-styles & npm run compress-scripts",
-    "server": "browser-sync start --files dist/bundle.css --server --no-notify --no-open",
-    "watch": "npm run styles -- -w",
-    "lint": "stylelint src/styles/*.css && xo src/scripts/*.js --space --env=browser",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "watch": "npm run styles -- -w"
   },
   "devDependencies": {
     "browser-sync": "^2.11.1",
