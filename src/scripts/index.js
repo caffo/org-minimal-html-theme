@@ -11,6 +11,27 @@
     return [].slice.call(lookup);
   }
 
+  // Load fonts asynchronously to avoid render blocking
+  function setupFonts() {
+    // Font settings
+    win.WebFontConfig = {
+      google: {
+        families: [
+          'Open+Sans:400,700:latin',
+          'PT+Serif:400,700:latin'
+        ]
+      }
+    };
+
+    // Straight from Google Fonts usage code snippet
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  }
+
   // Setup checklists
   function setupChecklists() {
     // Remove `<code>` from `li.on` and `li.off`
@@ -82,6 +103,9 @@
       doc.removeEventListener('mousewheel', checkBackToTop);
     }
   }
+
+  // Bootstrap fonts
+  setupFonts();
 
   // Bootstrap lists
   setupChecklists();
