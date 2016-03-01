@@ -95,11 +95,15 @@
     container.appendChild(link);
   }
 
+  function revealBackToTop() {
+    doc.querySelector('.back-to-top').style.opacity = 1;
+  }
+
   // When scroll y position > window height it will reveal the button
   // Will remove the event listener when conditions match
   function checkBackToTop() {
     if (win.scrollY > win.innerHeight) {
-      doc.querySelector('.back-to-top').style.opacity = 1;
+      revealBackToTop();
       doc.removeEventListener('mousewheel', checkBackToTop);
     }
   }
@@ -118,5 +122,8 @@
     doc.addEventListener('mousewheel', checkBackToTop);
     // Force check on page load
     doc.dispatchEvent(new WheelEvent('mousewheel'));
+  } else {
+    // If event listeners are not supported, display "back-to-top" w/o checking
+    revealBackToTop();
   }
 })(window);
