@@ -6,17 +6,21 @@
 
 /**
  * Useful container that centers the content within it.
+ *
+ * 1. Center the container horizontally
+ * 2. Add a little padding to the vertical edges
+ * 3. Lock max width for not-so-small screens
  */
 
 @custom-selector :--container #content, #postamble;
 
 :--container {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto; /* [1] */
+  margin-right: auto; /* [1] */
+  padding-left: var(--container-padding-horizontal); /* [2] */
+  padding-right: var(--container-padding-horizontal); /* [2] */
 
   @media (--medium-screens) {
-    max-width: var(--content-max-width);
-    padding-left: var(--content-padding-horizontal);
-    padding-right: var(--content-padding-horizontal);
+    max-width: var(--container-max-width); /* [3] */
   }
 }
