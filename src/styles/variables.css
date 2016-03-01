@@ -49,8 +49,7 @@
 
   /* Content */
   --content-max-width: 700px;
-  --content-padding-vertical: 0;
-  --content-padding-horizontal: 40px;
+  --content-padding-horizontal: 1.5rem;
   --content-margin-top: 2rem;
   --content-margin-bottom: 8rem;
 
@@ -112,6 +111,17 @@
   --highlight-color: var(--color);
   --highlight-bg: var(--color-lighter-green);
   --highlight-bg-hover: var(--color-light-green);
+
+  /* Postamble */
+  --postamble-font-size: 0.95rem;
+  --postamble-color: var(--color);
+  --postamble-font-family: var(--font-family-serif);
+  --postamble-item-margin-bottom: 0.25rem;
+  --postamble-item-padding-left: 1.35rem;
+  --postamble-padding-top: 2rem;
+  --postamble-padding-bottom: 2rem;
+  --postamble-icon-size: 1rem;
+  --postamble-icon-position: 0% 40%;
 }
 
 /* stylelint-enable */

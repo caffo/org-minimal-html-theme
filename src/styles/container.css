@@ -11,10 +11,12 @@
 @custom-selector :--container #content, #postamble;
 
 :--container {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (--medium-screens) {
     max-width: var(--content-max-width);
-    padding: var(--content-padding-vertical) var(--content-padding-horizontal);
+    padding-left: var(--content-padding-horizontal);
+    padding-right: var(--content-padding-horizontal);
   }
 }

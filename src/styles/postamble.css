@@ -1,0 +1,54 @@
+/*
+ ==============================================================================
+ Postamble
+ ==============================================================================
+*/
+
+#postamble {
+  font-family: var(--postamble-font-family);
+  color: var(--postamble-color);
+  padding-top: var(--postamble-padding-top);
+  padding-bottom: var(--postamble-padding-bottom);
+  border-top: 2px solid var(--color-light-gray);
+}
+
+#postamble p {
+  font-size: var(--postamble-font-size);
+  padding-left: var(--postamble-item-padding-left);
+  margin-bottom: var(--postamble-item-margin-bottom);
+}
+
+/**
+ * Fix link color for validation elements.
+ */
+
+#postamble .validation a {
+  color: var(--postamble-color);
+}
+
+/*
+ Postamble » Icons
+ ==============================================================================
+*/
+
+/* stylelint-disable max-line-length */
+@custom-selector :--postamble-icon #postamble .author, #postamble .date, #postamble .validation;
+/* stylelint-enable */
+
+:--postamble-icon {
+  background-size: var(--postamble-icon-size);
+  background-repeat: no-repeat;
+  background-position: var(--postamble-icon-position);
+}
+
+#postamble .author {
+  background-image: url(../src/svg/pencil.svg);
+}
+
+#postamble .date {
+  background-image: url(../src/svg/clock.svg);
+}
+
+#postamble .validation {
+  background-image: url(../src/svg/check.svg);
+}

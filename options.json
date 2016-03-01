@@ -1,4 +1,8 @@
 {
+  "postcss-url": {
+    "url": "inline",
+    "basePath": "../"
+  },
   "autoprefixer": {
     "browsers": "> 5%"
   }
