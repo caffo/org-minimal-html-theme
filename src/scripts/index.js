@@ -10,7 +10,7 @@
   // Setup checklists
   function setupChecklists() {
     // Remove `<code>` from `li.on` and `li.off`
-    $('li[class^=o] code').forEach(function (node, index) {
+    $('li[class^=o] code').forEach(function (node) {
       var ul = node.parentNode.parentNode;
       var li = node.parentNode;
       var code = node;
@@ -35,7 +35,9 @@
     checkbox.setAttribute('type', 'checkbox');
     checkbox.setAttribute('disabled', 'disabled');
 
-    if (isChecked) checkbox.setAttribute('checked', 'checked');
+    if (isChecked) {
+      checkbox.setAttribute('checked', 'checked');
+    }
 
     return checkbox;
   }
