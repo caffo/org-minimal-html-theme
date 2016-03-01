@@ -28,6 +28,22 @@
     });
   }
 
+  // Setup task lists
+  function setupTasklists() {
+    $('span.done, span.todo').forEach(function (node) {
+      var container = node.parentNode;
+      var status = node;
+      var isChecked = node.classList.contains('done');
+      var checkbox = createCheckbox(isChecked);
+
+      // Add `checklist` class to the task container
+      container.insertBefore(checkbox, status);
+
+      // Remove task node
+      status.remove();
+    });
+  }
+
   // Creates a simple checkbox element
   // isChecked: Whether or not it should display checked
   function createCheckbox(isChecked) {
@@ -43,4 +59,5 @@
   }
 
   setupChecklists();
+  setupTasklists();
 })(window);
