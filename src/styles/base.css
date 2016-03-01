@@ -34,3 +34,11 @@ body { /* [3] */
   color: var(--color);
   background-color: var(--color-bg);
 }
+
+/**
+ * Hide table of contents by default
+ **/
+
+#table-of-contents {
+  display: none;
+}
