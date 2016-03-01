@@ -5,6 +5,7 @@
 */
 
 pre,
+.tag,
 code {
   color: var(--code-color);
   font-family: var(--font-family-monospace);
@@ -35,6 +36,7 @@ pre {
  * 2. Adjust letter spacing for better readability
  */
 
+.tag,
 code {
   vertical-align: var(--code-vertical-align);
   padding-top: var(--code-padding-vertical);
@@ -43,6 +45,8 @@ code {
   padding-right: var(--code-padding-horizontal);
 }
 
+.tag::before,
+.tag::after,
 code::before,
 code::after {
   content: '\00a0'; /* [1] */

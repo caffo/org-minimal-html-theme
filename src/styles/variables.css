@@ -82,7 +82,9 @@
   --quote-citation-margin-right: 0.5rem;
 
   /* Code */
-  --code-font-size: 80%;
+  --code-font-size: var(--font-size-base);
+  --code-vertical-align: middle;
+  --code-color: var(--color);
   --code-margin-bottom: var(--font-size);
   --code-border-radius: 3px;
   --code-padding-vertical: 0.2rem;
