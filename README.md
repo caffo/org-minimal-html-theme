@@ -1,4 +1,3 @@
-[demo-url]: http://orgmode-minimal-theme.surge.sh
 [encharm-github-url]: https://github.com/encharm
 [font-awesome-svgs-url]: https://github.com/encharm/Font-Awesome-SVG-PNG
 [font-awesome-url]: http://fortawesome.github.io/Font-Awesome
@@ -10,8 +9,6 @@
 # org-minmal-html-theme
 
 > Simple and beautiful orgmode theme
-
-<sup>Check out [the demo][demo-url]</sup>
 
 ## Theme customization
 
