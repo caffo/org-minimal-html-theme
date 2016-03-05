@@ -95,7 +95,7 @@ The setup is based entirely in npm scripts.
 | `theme.json` | Theme configuration options |
 | `tools` | Custom build scripts |
 | `tools/build-scripts.js` | Injects theme configuration options to the distribution script file |
-| `tools/build-styles.js` | Pre process CSS files and build the project taking into account theme configuration options |
+| `tools/build-styles.js` | Pre process CSS files and build the project w/ theme configuration options |
 | `src` | Source code |
 
 ## Icons
