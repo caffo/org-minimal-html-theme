@@ -59,7 +59,7 @@ The setup is based entirely in npm scripts.
 | `compress-scripts` | Generates an optimized JavaScript bundle under `dist/bundle.min.js` |
 | `compress-styles` | Generates an optimized CSS bundle under `dist/bundle.min.css` |
 | `compress` | Compress assets in parallel |
-| `lint` | Lint CSS code |
+| `lint` | Lint source code |
 | `server` | Startup a local development server with live reload enabled |
 | `start` | Trigger file watching and startup a local development server |
 | `styles` | Build styles source to a distribution bundle under `dist/bundle.css` |
