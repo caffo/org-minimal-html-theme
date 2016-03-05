@@ -9,6 +9,5 @@ node_modules
 *.swo
 
 # Distribution files
-dist/*
-!dist/bundle.min.css
-!dist/bundle.min.js
+dist/bundle.css
+dist/bundle.js
