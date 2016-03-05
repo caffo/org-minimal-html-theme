@@ -6,11 +6,12 @@
     "compress-scripts": "uglifyjs src/scripts/*.js -o dist/bundle.min.js -c -m -v --screw-ie8 --stats",
     "compress-styles": "cleancss -o dist/bundle.min.css dist/bundle.css --s0",
     "lint": "stylelint src/styles/*.css && xo src/scripts/*.js --space --env=browser",
+    "scripts": "cp src/scripts/index.js dist/bundle.js && node tools/build-scripts.js",
     "server": "browser-sync start --files dist/bundle.css --server --no-notify --no-open",
     "start": "npm run watch & npm run server",
     "styles": "node tools/build-styles.js && postcss -c postcss.json",
-    "scripts": "cp src/scripts/index.js dist/bundle.js && node tools/build-scripts.js",
     "test": "npm run lint",
+    "theme": "node tools/build-styles.js & node tools/build-scripts.js",
     "watch": "npm run styles -- -w"
   },
   "devDependencies": {
