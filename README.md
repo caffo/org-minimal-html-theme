@@ -13,7 +13,7 @@
 
 <sup>Check out [the demo][demo-url]</sup>
 
-## Customization
+## Theme customization
 
 There are a few options available to customize the theme at build time.
 
