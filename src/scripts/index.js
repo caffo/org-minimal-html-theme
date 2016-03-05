@@ -1,10 +1,9 @@
 /* eslint-disable no-script-url */
-(function (exports) {
+(function (exports, options) {
   'use strict';
 
   var win = exports;
   var doc = exports.document;
-  var options = exports.ORGMODE_THEME_OPTIONS || {};
 
   // Query selector helper
   function $(selector) {
@@ -131,4 +130,4 @@
       revealBackToTop();
     }
   }
-})(window);
+})(window/*{{options}}*/);

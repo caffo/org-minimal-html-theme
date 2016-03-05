@@ -8,16 +8,15 @@
 const fs = require('fs');
 const theme = require('../theme.json');
 const themeAsJSON = JSON.stringify(theme);
-const themeNamespace = 'window.ORGMODE_THEME_OPTIONS';
 const path = require('path').resolve;
 const scriptsPath = `${__dirname}/../src/scripts`;
 const distPath = `${__dirname}/../dist`;
 const output = `${distPath}/bundle.js`;
 const buffer = fs.createWriteStream(output);
 const script = fs.readFileSync(`${scriptsPath}/index.js`, 'utf8');
+const pragma = /\/\*{{options}}\*\//gm;
 
-buffer.write(`${themeNamespace} = ${themeAsJSON};\n\n`);
-buffer.write(script);
+buffer.write(script.replace(pragma, `,${themeAsJSON}`));
 
 buffer.end(() => {
   console.log(`${path(output)} updated`);

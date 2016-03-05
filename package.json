@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "build": "npm run styles && npm run compress",
+    "build": "npm run theme && npm run styles && npm run compress",
     "compress": "npm run compress-styles & npm run compress-scripts",
-    "compress-scripts": "uglifyjs src/scripts/*.js -o dist/bundle.min.js -c -m -v --screw-ie8 --stats",
+    "compress-scripts": "uglifyjs dist/bundle.js -o dist/bundle.min.js -c -m -v --screw-ie8 --stats",
     "compress-styles": "cleancss -o dist/bundle.min.css dist/bundle.css --s0",
     "lint": "stylelint src/styles/*.css && xo src/scripts/*.js --space --env=browser && xo tools/*.js --space --esnext",
     "scripts": "cp src/scripts/index.js dist/bundle.js && node tools/build-scripts.js",
