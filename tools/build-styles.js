@@ -26,7 +26,7 @@ Object.keys(theme)
     const contents = hasRules ? fs.readFileSync(rules, 'utf8') : '';
 
     buffer.write(contents);
-});
+  });
 
 buffer.end(() => {
   console.log(`${path(output)} updated`);
