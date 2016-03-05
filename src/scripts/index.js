@@ -131,5 +131,4 @@
       revealBackToTop();
     }
   }
-
 })(window);
