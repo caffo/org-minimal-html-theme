@@ -7,6 +7,16 @@
 */
 
 :root {
+  /* Theme configuration */
+  /*
+  --should-hide-toc: true;
+  --should-hide-section-numbers: true;
+  --should-hide-postamble: false;
+  --should-hide-back-to-top: false;
+  --should-use-fancy-checkboxes: true;
+  --should-use-fancy-icons: true;
+  */
+
   /* Global */
   --font-size-base: 18px;
   --font-size: 1.25rem;

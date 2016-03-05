@@ -24,3 +24,6 @@
 /* Custom */
 @import './container.css';
 @import './underline.css';
+
+/* Theme */
+@import './theme.css';

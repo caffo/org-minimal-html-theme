@@ -4,6 +4,7 @@
 
   var win = exports;
   var doc = exports.document;
+  var options = exports.ORGMODE_THEME_OPTIONS || {};
 
   // Query selector helper
   function $(selector) {
@@ -112,18 +113,23 @@
   setupFonts();
 
   // Bootstrap lists
-  setupChecklists();
-  setupTasklists();
+  if (options['fancy-lists']) {
+    setupChecklists();
+    setupTasklists();
+  }
 
   // Bootstrap "back to top"
-  addBackToTop();
+  if (options['back-to-top']) {
+    addBackToTop();
 
-  if (doc.addEventListener) {
-    doc.addEventListener('mousewheel', checkBackToTop);
-    // Force check on page load
-    doc.dispatchEvent(new WheelEvent('mousewheel'));
-  } else {
-    // If event listeners are not supported, display "back-to-top" w/o checking
-    revealBackToTop();
+    if (doc.addEventListener) {
+      doc.addEventListener('mousewheel', checkBackToTop);
+      // Force check on page load
+      doc.dispatchEvent(new WheelEvent('mousewheel'));
+    } else {
+      // If event listeners are not supported, display "back-to-top" w/o checking
+      revealBackToTop();
+    }
   }
+
 })(window);

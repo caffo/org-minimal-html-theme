@@ -36,23 +36,7 @@ body { /* [3] */
 }
 
 /**
- * Hide table of contents by default
- */
-
-#table-of-contents {
-  display: none;
-}
-
-/**
- * Hide section numbers
- **/
-
-[class^=section-number-] {
-  display: none;
-}
-
-/**
- * Make sure that all checkboxes are vertically centered
+ * Make sure checkboxes are vertically aligned with their labels.
  */
 
 input[type=checkbox] {
