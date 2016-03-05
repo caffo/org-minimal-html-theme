@@ -57,7 +57,7 @@ The setup is based entirely in npm scripts.
 │   └── bundle.min.js
 ├── .stylelintrc
 ├── index.html
-├── options.json
+├── postcss.json
 ├── package.json
 └── src
     └── styles
@@ -70,7 +70,7 @@ The setup is based entirely in npm scripts.
 | `dist/bundle.min.js` | Optimized JavaScript bundle |
 | `.stylelintrc` | CSS linter configuration |
 | `index.html` | Simple HTML page to test theme features |
-| `options.json` | [PostCSS][postcss-url] configuration options |
+| `postcss.json` | [PostCSS][postcss-url] configuration file |
 | `package.json` | [npm][npm-url] manifest |
 | `src` | Source code |
 

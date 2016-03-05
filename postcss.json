@@ -1,0 +1,16 @@
+{
+  "use": [
+    "postcss-import",
+    "postcss-url",
+    "postcss-cssnext"
+  ],
+  "input": "src/styles/index.css",
+  "output": "dist/bundle.css",
+  "postcss-url": {
+    "url": "inline",
+    "basePath": "../"
+  },
+  "autoprefixer": {
+    "browsers": "> 5%"
+  }
+}
