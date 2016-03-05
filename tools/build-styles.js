@@ -7,8 +7,8 @@
 
 const fs = require('fs');
 const path = require('path').resolve;
-const theme = require('../../theme.json');
-const stylesPath = `${__dirname}/../../src/styles`;
+const theme = require('../theme.json');
+const stylesPath = `${__dirname}/../src/styles`;
 const output = `${stylesPath}/theme.css`;
 const buffer = fs.createWriteStream(output);
 

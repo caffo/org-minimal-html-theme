@@ -6,12 +6,12 @@
  */
 
 const fs = require('fs');
-const theme = require('../../theme.json');
+const theme = require('../theme.json');
 const themeAsJSON = JSON.stringify(theme);
 const themeNamespace = 'window.ORGMODE_THEME_OPTIONS';
 const path = require('path').resolve;
-const scriptsPath = `${__dirname}/../../src/scripts`;
-const distPath = `${__dirname}/../../dist`;
+const scriptsPath = `${__dirname}/../src/scripts`;
+const distPath = `${__dirname}/../dist`;
 const output = `${distPath}/bundle.js`;
 const buffer = fs.createWriteStream(output);
 const script = fs.readFileSync(`${scriptsPath}/index.js`, 'utf8');
