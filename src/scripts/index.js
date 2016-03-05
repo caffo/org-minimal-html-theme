@@ -1,9 +1,14 @@
-/* eslint-disable no-script-url */
+/* eslint-disable no-script-url,padded-blocks,spaced-comment */
 (function (exports, options) {
   'use strict';
 
   var win = exports;
   var doc = exports.document;
+
+  // Just so we can test without having to build theme options
+  if (!options) {
+    options = {};
+  }
 
   // Query selector helper
   function $(selector) {
@@ -24,11 +29,11 @@
     };
 
     // Straight from Google Fonts usage code snippet
-    var wf = document.createElement('script');
+    var wf = doc.createElement('script');
     wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
     wf.type = 'text/javascript';
     wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
+    var s = doc.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wf, s);
   }
 
@@ -108,26 +113,26 @@
     }
   }
 
-  // Bootstrap fonts
-  setupFonts();
+  function bootstrap() {
+    // Bootstrap fonts
+    setupFonts();
 
-  // Bootstrap lists
-  if (options['fancy-lists']) {
-    setupChecklists();
-    setupTasklists();
-  }
+    // Bootstrap lists
+    if (options['fancy-lists']) {
+      setupChecklists();
+      setupTasklists();
+    }
 
-  // Bootstrap "back to top"
-  if (options['back-to-top']) {
-    addBackToTop();
+    // Bootstrap "back to top"
+    if (options['back-to-top']) {
+      addBackToTop();
 
-    if (doc.addEventListener) {
       doc.addEventListener('mousewheel', checkBackToTop);
-      // Force check on page load
       doc.dispatchEvent(new WheelEvent('mousewheel'));
-    } else {
-      // If event listeners are not supported, display "back-to-top" w/o checking
-      revealBackToTop();
     }
   }
+
+  // Hold bootstrap until document body is parsed
+  exports.onload = bootstrap;
+
 })(window/*{{options}}*/);
