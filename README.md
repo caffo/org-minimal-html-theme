@@ -1,16 +1,32 @@
-[postcss-url]: https://github.com/postcss/postcss
 [demo-url]: http://orgmode-minimal-theme.surge.sh
 [encharm-github-url]: https://github.com/encharm
 [font-awesome-svgs-url]: https://github.com/encharm/Font-Awesome-SVG-PNG
 [font-awesome-url]: http://fortawesome.github.io/Font-Awesome
 [node-url]: https://nodejs.org
 [npm-url]: https://npmjs.org
+[postcss-url]: https://github.com/postcss/postcss
+[theme-json-url]: /theme.json
 
 # org-minmal-html-theme
 
 > Simple and beautiful orgmode theme
 
 <sup>Check out [the demo][demo-url]</sup>
+
+## Customization
+
+There are a few options available to customize the theme at build time.
+
+| Option | Description |
+| --- | --- |
+| `table-of-contents` | Whether or not to display the table of contents |
+| `section-numbers` | Whether or not to display section numbers |
+| `postamble` | Whether or not to display the postamble |
+| `fancy-lists` | Whether or not to use GitHub-like task lists with checkboxes |
+| `fancy-icons` | Whether or not to use icons to enhance the theme |
+| `back-to-top` | Whether or not to add the "back to top" button |
+
+All these options are easily configurable by editing the [`theme.json`][theme-json-url] file.
 
 ## Development
 
@@ -46,6 +62,8 @@ The setup is based entirely in npm scripts.
 | `server` | Startup a local development server with live reload enabled |
 | `start` | Trigger file watching and startup a local development server |
 | `styles` | Build styles source to a distribution bundle under `dist/bundle.css` |
+| `scripts` | Build scripts to a distribution bundle under `dist/bundle.js` |
+| `themes` | Run scripts and styles pre processing in parallel |
 | `watch` | Watch for file changes and then recompile what's changed |
 
 ### File structure
