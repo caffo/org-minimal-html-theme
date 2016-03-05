@@ -25,6 +25,10 @@ There are a few options available to customize the theme at build time.
 
 All these options are easily configurable by editing the [`theme.json`][theme-json-url] file.
 
+## Icons
+
+All the icons we use are provided by [Font Awesome][font-awesome-url]. Big shout out to [**@encharm**][encharm-github-url] for taking the time to export them all to SVG files.
+
 ## Development
 
 ### Requirements
@@ -97,7 +101,3 @@ The setup is based entirely in npm scripts.
 | `tools/build-scripts.js` | Injects theme configuration options to the distribution script file |
 | `tools/build-styles.js` | Pre process CSS files and build the project w/ theme configuration options |
 | `src` | Source code |
-
-## Icons
-
-All the icons we use are provided by [Font Awesome][font-awesome-url]. Big shout out to [**@encharm**][encharm-github-url] for taking the time to export them all to SVG files.
