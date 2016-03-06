@@ -10,7 +10,7 @@
     "url": "inline",
     "basePath": "../"
   },
-  "autoprefixer": {
-    "browsers": "> 5%"
+  "postcss-cssnext": {
+    "browsers": "> 15%"
   }
 }
