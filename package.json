@@ -27,5 +27,8 @@
     "stylelint": "^4.4.0",
     "uglify-js": "^2.6.2",
     "xo": "^0.12.1"
+  },
+  "dependencies": {
+    "media-queries": "^1.0.3"
   }
 }

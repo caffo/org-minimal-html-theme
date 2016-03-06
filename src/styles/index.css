@@ -1,9 +1,11 @@
+/* Media queries */
+@import 'media-queries';
+
 /* Custom normalize */
 @import './normalize.css';
 
-/* Variables, media queries and base styling */
+/* Variables and base styling */
 @import './variables.css';
-@import './media.css';
 @import './base.css';
 
 /* Components */

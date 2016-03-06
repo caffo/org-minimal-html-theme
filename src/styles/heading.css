@@ -16,7 +16,7 @@ h6 {
   margin-top: var(--heading-margin-top);
   margin-bottom: var(--heading-margin-bottom);
 
-  @media (--medium-screens) {
+  @media (--medium-up) {
     line-height: var(--heading-line-height);
   }
 }
