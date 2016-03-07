@@ -6,6 +6,9 @@
 [postcss-url]: https://github.com/postcss/postcss
 [theme-json-url]: /theme.json
 [setup-dir-url]: https://github.com/caffo/org-minimal-html-theme/tree/master/setup
+[author]: http://www.rodrigofranco.com
+[contributors]: /graphs/contributors
+[license]: /LICENSE
 
 # Org Minimal HTML Theme
 > Simple and beautiful orgmode HTML export theme
@@ -146,3 +149,7 @@ The setup is based entirely in npm scripts.
 | `tools/build-scripts.js` | Injects theme configuration options to the distribution script file |
 | `tools/build-styles.js` | Pre process CSS files and build the project w/ theme configuration options |
 | `src` | Source code |
+
+## License
+
+[MIT][license] © [Rodrigo Franco][author] et [all][contributors].
