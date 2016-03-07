@@ -21,10 +21,12 @@
 ## Building your theme files
 
 After cloning this repository, customize it as you see fit (see customization options below), before running the following:
-
-    npm i
-    npm run build
-    
+```sh
+  $ # install requirements for building
+  $ npm i
+  $ # actually build the files
+  $ npm run build
+```
 From there, upload the files generated in the `dist` subdirectory somewhere and create a [setup file][setup-dir-url] pointing to the URL of your theme files.
 
 
