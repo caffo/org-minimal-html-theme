@@ -22,6 +22,12 @@ There are a few options available to customize the theme at build time.
 | `fancy-lists` | Whether or not to use GitHub-like task lists with checkboxes |
 | `fancy-icons` | Whether or not to use icons to enhance the theme |
 | `back-to-top` | Whether or not to add the "back to top" button |
+| `collection` | Configuration for the collection module that is added to the content top |
+| `collection.enable` | Whether or not to display the collection |
+| `collection.avatar` | Optional avatar URL to be displayed alongside the title - If none is passed, it will not be added |
+| `collection.title` | Collection title |
+| `collection.url` | Optional URL for the collection link (defaults to `/`) |
+
 
 All these options are easily configurable by editing the [`theme.json`][theme-json-url] file.
 
