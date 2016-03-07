@@ -1,11 +1,11 @@
 /*
  ==============================================================================
- Postamble
+ Fancy Icons
  ==============================================================================
 */
 
 /**
- * 1. Remove content specific icons
+ * 1. Remove Postamble icons
  * 2. Remove horizontal spacing
  */
 
@@ -17,4 +17,12 @@
 
 #postamble p {
   padding-left: 0; /* [2] */
+}
+
+/**
+ * Remove "back-to-top" icons
+ */
+
+.back-to-top i {
+  display: none;
 }
