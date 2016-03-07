@@ -8,8 +8,13 @@
 [setup-dir-url]: https://github.com/caffo/org-minimal-html-theme/tree/master/setup
 
 # Org Minimal HTML Theme
-> Simple and beautiful orgmode theme
+> Simple and beautiful orgmode HTML export theme
 
+## Sample output
+
+* http://caffo.tizi.moe/
+* http://caffo.tizi.moe/JapanTrip.html
+* http://caffo.tizi.moe/2015.html
 
 
 
