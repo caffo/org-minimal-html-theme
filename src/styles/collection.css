@@ -23,8 +23,8 @@
 }
 
 .collection-url {
+  color: var(--color-gray);
   text-decoration: none;
-  color: var(--color-green);
   font-family: var(--font-family-sans-serif);
   font-size: 0.85rem;
   -webkit-font-smoothing: antialiased;
@@ -32,5 +32,5 @@
 }
 
 .collection-url:hover {
-  color: var(--color-dark-green);
+  color: var(--color);
 }

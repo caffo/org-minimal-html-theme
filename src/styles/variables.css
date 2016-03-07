@@ -18,10 +18,8 @@
   --color-gray: rgba(0, 0, 0, 0.45);
   --color-light-gray: rgba(0, 0, 0, 0.045);
   --color-lighter-gray: rgba(0, 0, 0, 0.05);
-  --color-green: #00AB6B;
   --color-light-green: #8CFFBB;
   --color-lighter-green: #EDFEF2;
-  --color-dark-green: #1C9963;
 
   /* Typography scale */
   --h1: 2.9rem;
