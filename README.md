@@ -5,10 +5,23 @@
 [npm-url]: https://npmjs.org
 [postcss-url]: https://github.com/postcss/postcss
 [theme-json-url]: /theme.json
+[setup-dir-url]: https://github.com/caffo/org-minimal-html-theme/tree/master/setup
 
-# org-minimal-html-theme
-
+# Org Minimal HTML Theme
 > Simple and beautiful orgmode theme
+
+
+
+
+## Building your theme files
+
+After cloning this repository, customize it as you see fit (see customization options below), before running the following:
+
+    npm i
+    npm run build
+    
+From there, upload the files generated in the `dist` subdirectory somewhere and create a [setup file][setup-dir-url] pointing to the URL of your theme files.
+
 
 ## Theme customization
 
@@ -31,6 +44,22 @@ There are a few options available to customize the theme at build time.
 <small>1. 35x35 is recommended</small>
 
 All these options are easily configurable by editing the [`theme.json`][theme-json-url] file.
+
+## Installing the theme
+
+Follow the examples available in the [setup][setup-dir-url] directory, to create your own setup files. After that, you can either:
+
+copy the “setup file” of the chosen theme to the directory of your Org files,
+
+    #+SETUPFILE: theme-minimal.setup
+
+or
+
+use the (relative or absolute) path to the “setup file” (in your Git local repository)
+
+    #+SETUPFILE: path/to/Git/repo/setup/theme-minimal.setup
+
+Then export your Org mode file to HTML with org-html-export-to-html or with C-c C-e h h.
 
 ## Icons
 
