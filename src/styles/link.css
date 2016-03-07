@@ -19,7 +19,6 @@ a {
   right: var(--back-to-top-padding);
   bottom: var(--back-to-top-padding);
   font-size: var(--back-to-top-font-size);
-  opacity: var(--back-to-top-initial-opacity);
   transition: opacity 0.5s linear;
 }
 

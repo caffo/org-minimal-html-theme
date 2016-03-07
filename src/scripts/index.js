@@ -60,7 +60,7 @@
 
   // Setup task lists
   function setupTasklists() {
-    $('span.done, span.todo').forEach(function (node) {
+    $('.done, .todo').forEach(function (node) {
       var container = node.parentNode;
       var status = node;
       var isChecked = node.classList.contains('done');
@@ -100,19 +100,6 @@
     container.appendChild(link);
   }
 
-  function revealBackToTop() {
-    doc.querySelector('.back-to-top').style.opacity = 1;
-  }
-
-  // When scroll y position > window height it will reveal the button
-  // Will remove the event listener when conditions match
-  function checkBackToTop() {
-    if (win.scrollY > win.innerHeight) {
-      revealBackToTop();
-      doc.removeEventListener('mousewheel', checkBackToTop);
-    }
-  }
-
   function bootstrap() {
     // Bootstrap fonts
     setupFonts();
@@ -126,9 +113,6 @@
     // Bootstrap "back to top"
     if (options['back-to-top']) {
       addBackToTop();
-
-      doc.addEventListener('mousewheel', checkBackToTop);
-      doc.dispatchEvent(new WheelEvent('mousewheel'));
     }
   }
 
