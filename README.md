@@ -12,6 +12,8 @@
 
 ## Sample output
 
+![screenshot](https://dl.dropboxusercontent.com/u/8178/org-minimal.png)
+
 * http://caffo.tizi.moe/
 * http://caffo.tizi.moe/JapanTrip.html
 * http://caffo.tizi.moe/2015.html
