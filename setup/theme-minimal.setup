@@ -1,0 +1,22 @@
+# -*- mode: org; -*-
+#
+# This setup stack represents the following configuration:
+#
+#{
+#  "table-of-contents": false,
+#  "section-numbers": false,
+#  "postamble": false,
+#  "fancy-lists": false,
+#  "fancy-icons": false,
+#  "back-to-top": true,
+#  "collection": {
+#    "enabled": false,
+#  }
+#}
+# I recommend you to generate your own css/js files by forking, cloning and customizing the file
+# theme.json before building it.
+#
+#
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://dl.dropboxusercontent.com/u/8178/org-minimal/bundle.min.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://dl.dropboxusercontent.com/u/8178/org-minimal/custom.css"/>
+#+HTML_HEAD: <script src="https://dl.dropboxusercontent.com/u/8178/org-minimal/bundle.min.js" type="text/javascript" ></script>
