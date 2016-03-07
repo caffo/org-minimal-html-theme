@@ -6,7 +6,7 @@
 [postcss-url]: https://github.com/postcss/postcss
 [theme-json-url]: /theme.json
 
-# org-minmal-html-theme
+# org-minimal-html-theme
 
 > Simple and beautiful orgmode theme
 
