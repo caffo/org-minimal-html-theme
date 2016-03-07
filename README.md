@@ -24,10 +24,11 @@ There are a few options available to customize the theme at build time.
 | `back-to-top` | Whether or not to add the "back to top" button |
 | `collection` | Configuration for the collection module that is added to the content top |
 | `collection.enable` | Whether or not to display the collection |
-| `collection.avatar` | Optional avatar URL to be displayed alongside the title - If none is passed, it will not be added |
+| `collection.avatar` | Optional avatar URL to be displayed alongside the title<sup>1</sup> (if none is passed, it will not be added) |
 | `collection.title` | Collection title |
 | `collection.url` | Optional URL for the collection link (defaults to `/`) |
 
+<small>1. 35x35 is recommended</small>
 
 All these options are easily configurable by editing the [`theme.json`][theme-json-url] file.
 
