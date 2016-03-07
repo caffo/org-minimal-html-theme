@@ -11,6 +11,7 @@
 /* Components */
 @import './checklist.css';
 @import './code.css';
+@import './collection.css';
 @import './content.css';
 @import './heading.css';
 @import './hero.css';

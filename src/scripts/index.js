@@ -22,7 +22,7 @@
     win.WebFontConfig = {
       google: {
         families: [
-          'Open+Sans:400,700:latin',
+          'Open+Sans:400:latin',
           'PT+Serif:400,400italic:latin'
         ]
       }

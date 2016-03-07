@@ -1,0 +1,36 @@
+/*
+ ==============================================================================
+ Collection
+ ==============================================================================
+*/
+
+.collection {
+  border-bottom: 1px solid var(--color-lighter-gray);
+  padding-bottom: 2rem;
+}
+
+.collection-avatar {
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: var(--color-lightest-gray);
+  border-radius: 35px;
+  border: 1px solid var(--color-light-gray);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.collection-url {
+  text-decoration: none;
+  color: var(--color-green);
+  font-family: var(--font-family-sans-serif);
+  font-size: 0.85rem;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+.collection-url:hover {
+  color: var(--color-dark-green);
+}
