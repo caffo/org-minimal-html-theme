@@ -100,6 +100,33 @@
     container.appendChild(link);
   }
 
+  // Display the collection name and user avatar at the header
+  function addCollection(collection) {
+    var content = doc.querySelector('#content');
+    var wrapper = doc.createElement('div');
+    var link = doc.createElement('a');
+    var avatar = doc.createElement('img');
+    var title = doc.createTextNode(collection.title);
+    var hasAvatar = collection.avatar && collection.avatar.length;
+
+    wrapper.classList.add('collection');
+
+    link.classList.add('collection-url');
+    link.href = collection.url || '/';
+
+    avatar.classList.add('collection-avatar');
+    avatar.src = collection.avatar;
+    avatar.alt = collection.title;
+
+    if (hasAvatar) {
+      link.appendChild(avatar);
+    }
+
+    link.appendChild(title);
+    wrapper.appendChild(link);
+    content.insertBefore(wrapper, content.firstChild);
+  }
+
   function bootstrap() {
     // Bootstrap fonts
     setupFonts();
@@ -113,6 +140,10 @@
     // Bootstrap "back to top"
     if (options['back-to-top']) {
       addBackToTop();
+    }
+
+    if (options['collection'].enabled) {
+      addCollection(options.collection);
     }
   }
 
