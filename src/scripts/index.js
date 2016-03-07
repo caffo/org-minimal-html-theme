@@ -142,7 +142,7 @@
       addBackToTop();
     }
 
-    if (options['collection'].enabled) {
+    if (options.collection.enabled) {
       addCollection(options.collection);
     }
   }
