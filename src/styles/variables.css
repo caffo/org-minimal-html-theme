@@ -58,6 +58,7 @@
   --paragraph-margin-bottom: 2.5rem;
 
   /* Lists */
+  --list-item-font-size: 1.05rem;
   --list-margin-bottom: var(--font-size);
   --list-symbol-level1: '●';
   --list-symbol-level2: '◯';

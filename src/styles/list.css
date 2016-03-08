@@ -4,6 +4,10 @@
  ==============================================================================
 */
 
+li {
+  font-size: var(--list-item-font-size);
+}
+
 /**
  * 1. Remove bottom margin of children lists
  */
