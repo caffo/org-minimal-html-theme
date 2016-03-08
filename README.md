@@ -7,7 +7,7 @@
 [theme-json-url]: /theme.json
 [setup-dir-url]: https://github.com/caffo/org-minimal-html-theme/tree/master/setup
 [author]: http://www.rodrigofranco.com
-[contributors]: /graphs/contributors
+[contributors]: https://github.com/caffo/org-minimal-html-theme/graphs/contributors
 [license]: /LICENSE
 
 # Org Minimal HTML Theme
