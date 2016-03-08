@@ -22,4 +22,8 @@
   opacity: 0.65;
 }
 
+:--underline:active {
+  opacity: 0.45;
+}
+
 /* stylelint-enable */
