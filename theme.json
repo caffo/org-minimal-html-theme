@@ -5,6 +5,7 @@
   "fancy-lists": true,
   "fancy-icons": true,
   "back-to-top": true,
+  "back-to-top-text": "Back to top",
   "collection": {
     "enabled": true,
     "avatar": "",
