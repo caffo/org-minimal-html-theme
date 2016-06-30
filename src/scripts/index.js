@@ -95,7 +95,7 @@
 
     link.classList.add('back-to-top');
     link.setAttribute('href', 'javascript:scroll(0, 0);');
-    link.innerHTML = '<i></i>Back to top';
+    link.innerHTML = '<i></i>' + options['back-to-top-text'];
 
     container.appendChild(link);
   }
