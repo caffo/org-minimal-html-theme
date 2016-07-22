@@ -23,6 +23,7 @@
 @import './selection';
 @import './strike.css';
 @import './table.css';
+@import './image.css';
 
 /* Custom */
 @import './container.css';
