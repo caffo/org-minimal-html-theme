@@ -4,7 +4,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "build": "npm run theme && npm run styles && npm run compress",
+    "build": "npm run theme && npm run styles && npm run scripts && npm run compress",
     "compress": "npm run compress-styles & npm run compress-scripts",
     "compress-scripts": "uglifyjs dist/bundle.js -o dist/bundle.min.js -c -m -v --screw-ie8 --stats",
     "compress-styles": "cleancss -o dist/bundle.min.css dist/bundle.css --s0",
