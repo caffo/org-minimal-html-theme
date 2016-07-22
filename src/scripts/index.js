@@ -30,7 +30,7 @@
 
     // Straight from Google Fonts usage code snippet
     var wf = doc.createElement('script');
-    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
     wf.type = 'text/javascript';
     wf.async = 'true';
     var s = doc.getElementsByTagName('script')[0];
