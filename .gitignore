@@ -11,3 +11,5 @@ node_modules
 # Distribution files
 dist/bundle.css
 dist/bundle.js
+dist/bundle.min.js
+dist/bundle.min.css
