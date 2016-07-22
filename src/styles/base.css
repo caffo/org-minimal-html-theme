@@ -51,3 +51,16 @@ body { /* [3] */
 input[type=checkbox] {
   vertical-align: middle;
 }
+
+/**
+ * Fix <sub> visually
+ */
+
+sub:before {
+  content: "_";
+}
+
+sub {
+  bottom: 0;
+  font-size: 100%;
+}
