@@ -25,12 +25,15 @@
           'Open+Sans:400:latin',
           'PT+Serif:400,400italic:latin'
         ]
+      },
+      active: function(){
+        $("html")[0].classList.add("show");
       }
     };
 
     // Straight from Google Fonts usage code snippet
     var wf = doc.createElement('script');
-    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
     wf.type = 'text/javascript';
     wf.async = 'true';
     var s = doc.getElementsByTagName('script')[0];
@@ -145,6 +148,8 @@
     if (options.collection.enabled) {
       addCollection(options.collection);
     }
+
+//    console.log($("#content")[0].classList.add("show"));
   }
 
   // Hold bootstrap until document body is parsed
