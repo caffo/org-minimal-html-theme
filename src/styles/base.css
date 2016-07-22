@@ -16,10 +16,19 @@ html {
   box-sizing: border-box; /* [1] */
   font-size: 14px;
 
+  /**
+   * We start with visibility hidden so we can
+   * toggle it after webfont is loaded to prevet
+   * FOUT
+   **/
+  visibility: hidden;
+
   @media (--medium-up) {
     font-size: var(--font-size-base); /* [2] */
   }
 }
+
+html.show { visibility: visible !important; }
 
 *,
 *::before,

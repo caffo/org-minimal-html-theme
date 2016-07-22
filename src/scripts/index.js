@@ -25,6 +25,9 @@
           'Open+Sans:400:latin',
           'PT+Serif:400,400italic:latin'
         ]
+      },
+      active: function(){
+        $("html")[0].classList.add("show");
       }
     };
 
@@ -145,6 +148,8 @@
     if (options.collection.enabled) {
       addCollection(options.collection);
     }
+
+//    console.log($("#content")[0].classList.add("show"));
   }
 
   // Hold bootstrap until document body is parsed
